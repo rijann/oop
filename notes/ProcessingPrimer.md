@@ -15,7 +15,7 @@ The coordinate system for pixels in a computer window has a x-axis and y-axis as
 
 (0,0) is the coordinate for the top left corner.
 
-You can create a window of any size using the ``size()`` method.  For example this code
+You can specify a window of any size using the ``size()`` method.  For example this code
 
 ```java
 size(300,200);
@@ -62,4 +62,6 @@ blah
 # Colour
 
 
+# Methods
 
+[``size()``](https://processing.org/reference/size_.html "size()")
