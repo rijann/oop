@@ -64,4 +64,4 @@ blah
 
 # Methods
 
-[``size()``](https://processing.org/reference/size_.html "size()"){:target="_blank"}
+[``size()``](https://processing.org/reference/size_.html "size()")
