@@ -2,5 +2,6 @@
 
 A repository for OOP3 module.
 
-Processing Primer
+
+[Processing Primer](./notes/ProcessingPrimer.md)
 
