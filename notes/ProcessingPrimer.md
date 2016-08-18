@@ -11,7 +11,7 @@
 
 The coordinate system for pixels in a computer window has a x-axis and y-axis as shown below:
 
-![alt text](../images/coord.png "Coordinates")
+![alt text](../images/coord.png "Coordinate System")
 
 (0,0) is the coordinate for the top left corner.
 
