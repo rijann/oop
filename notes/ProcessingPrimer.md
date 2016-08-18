@@ -21,7 +21,7 @@ You can create a window of any size using the ``size()`` method.  For example th
 size(300,200);
 line(0,0,300,200);
 ```
-!(../images/size300200.png "Window 300x200")
+![](../images/size300200.png "Window 300x200")
 
 # Shapes
 
