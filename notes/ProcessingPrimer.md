@@ -50,17 +50,15 @@ for (int x=0; x<300; x=x+10)
 
 ## Rectangles, Ellipses & Points
 
-..code-block:: java
-
+```java
 	size(300, 200);
 
 	line(0, 0, 150, 100);
 	rect(150, 0, 300, 100);
 	ellipse(50, 150, 50, 50);
 	point(200, 150);
-
-
-
+```
+![](../images/shapes2.png "Rectangles, Ellipses & Points")
 
 # Colour
 
