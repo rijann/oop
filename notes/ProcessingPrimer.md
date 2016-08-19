@@ -46,12 +46,11 @@ for (int x=0; x<300; x=x+10)
 ```
 ![](../images/lines.png "Lines")
 
-See [``line()``](https://processing.org/reference/line_.html "line()")
 
 
 ## Rectangles, Ellipses & Points
 
-.. code-block:: java
+..code-block:: java
 
 	size(300, 200);
 
