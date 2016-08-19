@@ -26,6 +26,8 @@ line(0,0,300,200);
 
 # Shapes
 
+![alt text](../images/shapes.png "Shapes")
+
 You can draw a number of shapes such as -- [``line()``](https://processing.org/reference/line_.html "line()"), [``rect()``](https://processing.org/reference/rect_.html "rect()"), [``ellipse()``](https://processing.org/reference/ellipse_.html "ellipse()") and [``point()``](https://processing.org/reference/point_.html "point()")
 
 ## Lines
@@ -45,6 +47,19 @@ for (int x=0; x<300; x=x+10)
 ![](../images/lines.png "Lines")
 
 See [``line()``](https://processing.org/reference/line_.html "line()")
+
+
+## Rectangles, Ellipses & Points
+
+.. code-block:: java
+
+	size(300, 200);
+
+	line(0, 0, 150, 100);
+	rect(150, 0, 300, 100);
+	ellipse(50, 150, 50, 50);
+	point(200, 150);
+
 
 
 
