@@ -3,7 +3,7 @@
 # Contents
 - [Coordinate System](#coordinate-system)
 - [Shapes](#shapes)
-- [Stroke, Fill & Colour](#stroke,-fill-&-colour)
+- [Stroke, Fill & Colour](#stroke-fill-&-colour)
 
 
 # What is Processing?
