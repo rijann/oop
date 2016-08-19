@@ -73,6 +73,7 @@ By adding the [``stroke()``](https://processing.org/reference/stroke_.html "stro
 For example:
 
 ```java
+// background(0, 0, 0);
 size(300, 200);
 
 stroke(255, 0, 0); // red
@@ -89,6 +90,8 @@ ellipse(50, 150, 50, 50);
 stroke(255, 255, 0); // yellow
 point(200, 150);
 ```
+The [``background()``](https://processing.org/reference/background_.html "background()") method sets the background color of the window.
+
 ![](../images/rgb.png "Stroke, Fill & Colour")
 
 
@@ -101,3 +104,4 @@ point(200, 150);
 [``point()``](https://processing.org/reference/point_.html "point()")
 [``stroke()``](https://processing.org/reference/stroke_.html "stroke()")
 [``fill()``](https://processing.org/reference/fill_.html "fill()")
+[``background()``](https://processing.org/reference/background_.html "background()")
