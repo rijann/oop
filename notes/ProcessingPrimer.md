@@ -6,6 +6,8 @@
 - [Colour](#colour)
 
 
+# What is Processing?
+
 
 # Coordinate System
 
@@ -24,9 +26,11 @@ line(0,0,300,200);
 
 # Shapes
 
-## line()
+You can draw a number of shapes such as -- [``line()``](https://processing.org/reference/line_.html "line()"), [``rect()``](https://processing.org/reference/rect_.html "rect()"), [``ellipse()``](https://processing.org/reference/ellipse_.html "ellipse()") and [``point()``](https://processing.org/reference/point_.html "point()")
 
-Draws a line (a direct path between two points) to the screen
+## Lines
+
+Draws a line (a direct path between two points) on the screen.
 
 ``line(0,0,300,200)``
 
@@ -42,39 +46,7 @@ for (int x=0; x<300; x=x+10)
 
 See [``line()``](https://processing.org/reference/line_.html "line()")
 
-blah
 
-blah
-blah
-blah
-
-blah
-blah
-blah
-
-blah
-blah
-blah
-
-blah
-blah
-blah
-
-blah
-blah
-blah
-
-blah
-blah
-blah
-
-blah
-blah
-blah
-
-blah
-blah
-blah
 
 # Colour
 
