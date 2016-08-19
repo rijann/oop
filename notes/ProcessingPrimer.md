@@ -3,7 +3,7 @@
 # Contents
 - [Coordinate System](#coordinate-system)
 - [Shapes](#shapes)
-- [Stroke, Fill & Colour](#stroke-fill-&-colour)
+- [Stroke, Fill & Colour](#stroke-fill-colour)
 
 
 # What is Processing?
@@ -58,7 +58,7 @@ point(200, 150);
 ```
 ![](../images/shapes2.png "Rectangles, Ellipses & Points")
 
-# Stroke, Fill & Colour
+# Stroke Fill Colour
 
 In Processing, every shape has a [``stroke()``](https://processing.org/reference/stroke_.html "stroke()") and/or a [``fill()``](https://processing.org/reference/fill_.html "fill()"). 
 
