@@ -8,7 +8,7 @@
 - [Stroke, Fill & Colour](#stroke-fill-colour)
 - [Processing Reference](#processing-reference)
 - [Program Flow](#program-flow)
-- [Processing Built-In Variables](#processing-builtin-variables)
+- [Processing Built-In Variables](#processing-built-in-variables)
 - [Processing Methods](#processing-methods)
 - [Processing Variables](#processing-variables)
 
