@@ -6,7 +6,9 @@
 - [Stroke, Fill & Colour](#stroke-fill-colour)
 - [Processing Reference](#processing-reference)
 - [Program Flow](#program-flow)
+- [Processing BuiltIn Variables](#processing-builtin-variables])
 - [Processing Methods](#processing-methods)
+- [Processing Variable](#processing-variables)
 
 
 # What is Processing?
@@ -167,12 +169,9 @@ float x;
 
 // setup() runs first one time
 void setup() 
-{
-  // Set the size of the window
-  size(640, 360);
-
-  // intialise x coordinated
-  x=0;
+{  
+  size(640, 360); // Set the size of the window  
+  x=0;            // intialise x coordinated
 }
 
 // draw() loops continuously until you close the window
@@ -187,6 +186,31 @@ void draw()
 ```
 
 
+# Processing BuiltIn Variables
+
+Processing has some handy built-in system variables that can be used.
+
+For example:
+
+```java
+// runs one time
+void setup() 
+{
+  // Set the size of the window
+  size(640, 360);
+}
+
+// loops continuously 
+void draw() 
+{
+  background(0, 0, 0);
+  fill(255, 255, 255); 
+
+  ellipse(mouseX, height/2, 50, 50);  // draw ellipse using mouse x coordinate
+}
+```
+
+
 # Processing Methods
 
 [``size()``](https://processing.org/reference/size_.html "size()")
@@ -197,3 +221,8 @@ void draw()
 [``stroke()``](https://processing.org/reference/stroke_.html "stroke()")
 [``fill()``](https://processing.org/reference/fill_.html "fill()")
 [``background()``](https://processing.org/reference/background_.html "background()")
+
+
+# Processing Variable
+
+[``mouseX``](https://processing.org/reference/mouseX.html "mouseX()")
