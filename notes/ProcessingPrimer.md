@@ -8,7 +8,7 @@
 - [Stroke, Fill & Colour](#stroke-fill-colour)
 - [Processing Reference](#processing-reference)
 - [Program Flow](#program-flow)
-- [Processing BuiltIn Variables](#processing-builtin-variables)
+- [Processing Built-In Variables](#processing-builtin-variables)
 - [Processing Methods](#processing-methods)
 - [Processing Variables](#processing-variables)
 
@@ -188,7 +188,7 @@ void draw()
 These 2 blocks of code will form the template of all of our programs from now on.
 
 
-# Processing BuiltIn Variables
+# Processing Built-In Variables
 
 Processing has some handy built-in system variables that can be used.
 
