@@ -5,7 +5,7 @@
 - [Shapes](#shapes)
 - [Stroke, Fill & Colour](#stroke-fill-colour)
 - [Processing Reference](#processing-reference)
-- [Processing Flow](#processing-flow)
+- [Program Flow](#program-flow)
 - [Processing Methods](#processing-methods)
 
 
@@ -128,7 +128,7 @@ The [``background()``](https://processing.org/reference/background_.html "backgr
 blah
 
 
-- [Program Flow](#processing-flow)
+# Program Flow
 
 In the programs shown so far the instructions are executed in sequence from the first instruction to the last instruction - the flow is sequential.
 This sequential flow is typical of all programs you wrote in *OOP* last year.
