@@ -4,9 +4,35 @@
 - [Coordinate System](#coordinate-system)
 - [Shapes](#shapes)
 - [Stroke, Fill & Colour](#stroke-fill-colour)
+- [Processing Reference](#processing-reference)
 - [Processing Methods](#processing-methods)
 
 # What is Processing?
+.. http://learningprocessing.com/videos/2-0
+
+processing.org website.  
+Can download it
+
+<show first screen>
+
+It is a Java programming environment/tool
+	with the purpose of teaching the fundamentals of computer programming in a visual context
+	
+it has a set of added methods that allows us to easily draw to the screen
+it has examples and a community
+Anatomy of buttons at top
+Run = compile and execute your code
+
+use this code:
+```java
+size(300,200);
+line(0,0,300,200);
+```
+and show output and code in a image
+
+Processing website has a Reference which has a list of all the processing methods
+For example here is reference for the line() or rect() method
+
 
 
 # Coordinate System
@@ -32,7 +58,7 @@ You can draw a number of shapes such as -- [``line()``](https://processing.org/r
 
 ## Lines
 
-The [``line()``](https://processing.org/reference/line_.html "line()") methods draws a line (a direct path between two points) on the screen.
+The [``line()``](https://processing.org/reference/line_.html "line()") method draws a line (a direct path between two points) on the screen.
 
 ```java
 size(300, 200);
@@ -64,7 +90,7 @@ In Processing, every shape has a [``stroke()``](https://processing.org/reference
 
 The *stroke* specifes the color for the outline of the shape, and the *fill* specifes the color for the interior of that shape. The default colours for stroke and fill are black and white respectively.
 
-Digital colours are constructed by mixing three primary colours -  red, green, and blue (i.e., *RGB* colour).  RGB colours are expressed as ranges from 0 (none of that colour) to 255 (as much as possible).  RGB colours are listed in the order red, green, and blue. You will get the hang of RGB color mixing through experimentation.
+Digital colours are constructed by mixing three primary colours -  red, green, and blue (i.e. *RGB* colour).  RGB colours are expressed as ranges from 0 (none of that colour) to 255 (as much as possible).  RGB colours are listed in the order red, green, and blue. You will get the hang of RGB color mixing through experimentation.
 
 Here is a handy [Colour Picker](http://www.w3schools.com/colors/colors_picker.asp "W3 Colour Picker").
 
@@ -90,10 +116,14 @@ ellipse(50, 150, 50, 50);
 stroke(255, 255, 0); // yellow
 point(200, 150);
 ```
-The [``background()``](https://processing.org/reference/background_.html "background()") method sets the background color of the window.
+The [``background()``](https://processing.org/reference/background_.html "background()") method sets the background color of the window.  The default is light gray.
 
 ![](../images/rgb.png "Stroke, Fill & Colour")
 
+
+# Processing Reference
+
+blah
 
 # Processing Methods
 
