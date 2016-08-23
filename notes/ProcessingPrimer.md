@@ -2,7 +2,7 @@
 
 # Contents
 
-- [What is Processing?](#what-is-processing?)
+- [What is Processing?](#what-is-processing)
 - [Coordinate System](#coordinate-system)
 - [Shapes](#shapes)
 - [Stroke, Fill & Colour](#stroke-fill-colour)
