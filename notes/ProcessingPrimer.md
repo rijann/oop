@@ -1,12 +1,14 @@
 # Processing Primer
 
 # Contents
+
+- [What is Processing?](#what-is-processing?)
 - [Coordinate System](#coordinate-system)
 - [Shapes](#shapes)
 - [Stroke, Fill & Colour](#stroke-fill-colour)
 - [Processing Reference](#processing-reference)
 - [Program Flow](#program-flow)
-- [Processing BuiltIn Variables](#processing-builtin-variables])
+- [Processing BuiltIn Variables](#processing-builtin-variables)
 - [Processing Methods](#processing-methods)
 - [Processing Variables](#processing-variables)
 
