@@ -190,7 +190,7 @@ void draw()
 
 Processing has some handy built-in system variables that can be used.
 
-For example:
+For example [``mouseX``](https://processing.org/reference/mouseX.html "mouseX()") and [``height``](https://processing.org/reference/height.html "height()") variables are used here:
 
 ```java
 // runs one time
@@ -209,7 +209,7 @@ void draw()
   ellipse(mouseX, height/2, 50, 50);  // draw ellipse using mouse x coordinate
 }
 ```
-
+Other 
 
 # Processing Methods
 
