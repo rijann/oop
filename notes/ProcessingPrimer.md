@@ -5,7 +5,9 @@
 - [Shapes](#shapes)
 - [Stroke, Fill & Colour](#stroke-fill-colour)
 - [Processing Reference](#processing-reference)
+- [Processing Flow](#processing-flow)
 - [Processing Methods](#processing-methods)
+
 
 # What is Processing?
 .. http://learningprocessing.com/videos/2-0
@@ -124,6 +126,66 @@ The [``background()``](https://processing.org/reference/background_.html "backgr
 # Processing Reference
 
 blah
+
+
+- [Program Flow](#processing-flow)
+
+In the programs shown so far the instructions are executed in sequence from the first instruction to the last instruction - the flow is sequential.
+This sequential flow is typical of all programs you wrote in *OOP* last year.
+
+However, in *Problem Solving with Robots* a different way of executing instructions was seen with the Robocode software.  
+The flow is event driven.
+Instructions were executed when an event occured.  For example, a block of code was executed when the robot scanned another robot, or a block of code was executed when the robot was hit by a bullet.
+
+The Processing environment typically uses 2 blocks of code to control the flow of its programs - ```setup()``` and ```draw()```.
+
+```setup()``` is used to execute instructions at the start of the program only **once**.
+
+```draw()``` is used to execute instructions **continuously**.  
+
+**Why use these methods?**
+
+There are often things you need to first initialise in a program:
+
+-	set the size of the window
+-	intialise variables
+-	draw content in starting locations	
+
+Then there things you need to do as the program runs:
+
+-	move the content
+-	get user input 
+-	check location of things 
+-	change variable values
+-	draw new content
+
+
+For example:
+
+```java
+float x; 
+
+// setup() runs first one time
+void setup() 
+{
+  // Set the size of the window
+  size(640, 360);
+
+  // intialise x coordinated
+  x=0;
+}
+
+// draw() loops continuously until you close the window
+void draw() 
+{
+  background(0, 0, 0);
+  fill(255, 255, 255); 
+
+  ellipse(x, 180, 50, 50);  // draw ellipse using x
+  x++;                      // add 1 to x
+}
+```
+
 
 # Processing Methods
 
