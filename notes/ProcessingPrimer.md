@@ -209,7 +209,7 @@ void draw()
   ellipse(mouseX, height/2, 50, 50);  // draw ellipse using mouse x coordinate
 }
 ```
-Other built-in variables are [``mouseY``](https://processing.org/reference/mouseY.html "mouseY()") and [``width``](https://processing.org/reference/width.html "width()")
+Other built-in variables are [``mouseY``](https://processing.org/reference/mouseY.html "mouseY()") and [``width``](https://processing.org/reference/width.html "width()").  And there are many more to find at the [Processing Reference](https://processing.org/reference/)
 
 
 # Processing Methods
