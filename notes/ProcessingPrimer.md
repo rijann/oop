@@ -8,7 +8,7 @@
 - [Program Flow](#program-flow)
 - [Processing BuiltIn Variables](#processing-builtin-variables])
 - [Processing Methods](#processing-methods)
-- [Processing Variable](#processing-variables)
+- [Processing Variables](#processing-variables)
 
 
 # What is Processing?
@@ -161,7 +161,6 @@ Then there things you need to do as the program runs:
 -	change variable values
 -	draw new content
 
-
 For example:
 
 ```java
@@ -184,6 +183,7 @@ void draw()
   x++;                      // add 1 to x
 }
 ```
+These 2 blocks of code will form the template of all of our programs from now on.
 
 
 # Processing BuiltIn Variables
@@ -209,7 +209,8 @@ void draw()
   ellipse(mouseX, height/2, 50, 50);  // draw ellipse using mouse x coordinate
 }
 ```
-Other 
+Other built-in variables are [``mouseY``](https://processing.org/reference/mouseY.html "mouseY()") and [``width``](https://processing.org/reference/width.html "width()")
+
 
 # Processing Methods
 
@@ -223,6 +224,9 @@ Other
 [``background()``](https://processing.org/reference/background_.html "background()")
 
 
-# Processing Variable
+# Processing Variables
 
 [``mouseX``](https://processing.org/reference/mouseX.html "mouseX()")
+[``mouseY``](https://processing.org/reference/mouseY.html "mouseY()")
+[``width``](https://processing.org/reference/width.html "width()")
+[``height``](https://processing.org/reference/height.html "height()")
