@@ -9,7 +9,7 @@ Some things to note before we start:
 
 -	Arrays are effectively a primitive type in Java. By that I mean that they are built into the core language and not available as a class that you import. They aren’t the same as traditional objects – i.e. you don’t get things like methods with arrays.
 
-	|br|
+	
 
 -	Array lists – and the other types available in the ``Collection`` framework – are really *managed arrays*, since they use arrays behind the scenes. This distinction is part of the ethos of objected-oriented design – arrays give us a basic mechanism to store large amounts of data; Container classes give us ways (or methods) to access, add, delete, search, and sort the data in elegant well-proven and well-tested ways.
 
@@ -34,10 +34,9 @@ At this point and important issue to bear in mind is that an array is a contiguo
 Remember, before we can use any variable/object we must declare it (e.g. you can’t just go ``x = 10;`` if you haven’t specified ``int x;`` beforehand). The same holds true for arrays: we must declare the array before we use it (though, just like other variables, we can initialize the array when we declare it  e.g. ``int x = 10;``).
 To store the marks of  200 students, you can declare an array, marks, of size 200 and can store the marks of as many students: 
 
-.. code-block:: java
-
+```java
 	int marks[] = new int[200];
-
+```
 
 As you already know, array index element number always starts with 0(zero).
 
@@ -49,11 +48,11 @@ Here’s another example of an array declaration, this time with annotations:
 Figure 1: Array declaration
 This statement declares a variable called salaries. It is of type ``int[]`` (i.e., array of int). The use of the word new introduces a constructor for the array. The number in brackets after the type of the array shows how many elements are in it. The variable salaries contains a reference  to an area of memory containing a group of elements of type int. This is shown below: 
 
-.. image:: images/fig1.png
+![alt text](../images/fig1.png "Array Declaration")
 
 This statement declares a variable called ``salaries``. It is of type ``int[]`` (i.e., array of int). The use of the word ``new`` introduces a constructor for the array. The number in brackets after the type of the array shows how many elements are in it. The variable salaries contains a *reference*  to an area of memory containing a group of elements of type int. This is shown below: 
 
-.. image:: images/fig2.png
+![alt text](../images/fig2.png "Array Name is a Reference to Start of Array")
 
 It is vital that you understand that an object name is actually a reference to the memory where the object resides. I will re-iterate this concept a number of times in the module because it is fundamental.
 
@@ -277,14 +276,14 @@ I’m not going to spend too long on this so I’ll launch straight into an exam
 
 You can create a two-dimensional array of 5 by 5 ``int`` values and assign it to a reference called matrix using this syntax:
 
-.. code-block:: java
+```java
 
 	int[][] matrix = new int[5][5];
-
+```
 
 Two subscripts are used in a two-dimensional array, one for the row, and the other for the column. As in a one-dimensional array, the index for each subscript is of the ``int`` type and starts from 0, as shown here:
 
-.. image:: images/fig3.png
+![alt text](../images/fig2.png "")
  
 The index of each subscript of a two-dimensional array is an ``int`` value starting from 0.
 
@@ -344,7 +343,7 @@ The main points to note about the code above are:
 
 	One thing to note – we don’t specify the size (although there is a constructor to do this if we want) – we start off with an empty list. With arrays we always had to specify the size.
 
-	|br|
+	
 
 #.	Once we’ve created our arraylist we need to be able to put "things" 
 	(Person objects in this example) into it and get "things" out of it.
@@ -570,11 +569,11 @@ ALSO – don’t be tempted to do a ``System.out.print`` inside the method body/
 
 #.	Arrays are fixed size (set when you declare them); ArrayLists can grow and shrink (initially they are empty – size of 0 – when you declare them).
 
-	|br|
+	
 
 #.	Arrays can be used to store primitive data types or objects; ArrayLists can only store objects – if you want to store primitives in an ArrayList you have to use the associated wrapper objects (``Integer`` instead of ``int``; ``Double`` instead of ``double``; etc)
 
-	|br|
+	
 
 #.	Arrays use the ``[]`` operators to index the array (both for reading and setting data). E.g. the following will set the 3rd element to 6:
 
@@ -593,7 +592,7 @@ ALSO – don’t be tempted to do a ``System.out.print`` inside the method body/
 
 	We don’t use [] to access them. Instead we use methods, the most common of which are:- ``add()``, ``get()``, ``size()``, ``set()`` and ``remove()``.
 
-	|br|
+	
 
 #.	You can initialise an array when you declare it, but you cannot do this with an ArrayList. e.g. the following will create an array of length 5 and assign it the values 6, 3, 47, 23, 1
 
