@@ -197,10 +197,9 @@ On line 10 I get something out of the array – It looks a bit odd at first view
 
 In the code above, we created an array capable of holding 2 person objects. If I change line 10 to:
 
-.. code-block:: java
-
+```java
 	System.out.println(peopleDetails[2].getFirstName());
-
+```
 
 I get something like this when I try to run it:
 
@@ -309,7 +308,6 @@ One final point to mention at this stage: arrays can be used to store objects or
 Let’s dive right in with a little example that utilises our ``Person`` class once again.
 
 ```java
-
 	import java.util.ArrayList; //could also use java.util.*;
 
 	public class ArrayListOfPersonTester
@@ -333,9 +331,10 @@ The main points to note about the code above are:
 
 #.	Look at how we declare our array:  
 
-	.. code-block:: java
-
+	```java
 		ArrayList<Person> peopleDetails = new ArrayList<Person>();
+
+	```
 
 	On the left we tell the compiler the type – i.e. an ``ArrayList`` to store Person objects, then followed by the name of our arraylist reference. 
 
@@ -358,8 +357,7 @@ The main points to note about the code above are:
 
 I don’t want to spend much time going through each method in detail. Instead, I’ve presented an example below – see if you can anticipate the output (before looking at it – cover it up with your hand or a piece of paper!). Try to follow it by drawing the array on paper – it’s the best way to learn memory/reference based concepts.
 
-.. code-block:: java
-
+```java
 	import java.util.ArrayList;
 
 	public class AraryListDemo {
@@ -395,13 +393,12 @@ I don’t want to spend much time going through each method in detail. Instead, 
 	    System.out.print("contents of al:" + al);
 	    
 	  }
-
 	} 
-
+```
 
 Output:-
 
-.. code-block:: text
+```text
 
 	Initial size of al:  0
 	size of al after additions 7
@@ -409,6 +406,7 @@ Output:-
 	size of after deletions : 5
 	contents of al:[C, A2, E, B, D]
 
+```
 
 
 ### ArrayLists and wrapper classes
@@ -420,16 +418,15 @@ Java provides ``Boolean``, ``Character``, ``Double``, ``Float``, ``Byte``, ``Sho
 
 Traditionally, you would create a wrapper object like this:
 
-.. code-block:: java
-
+```java
 	Double d = new Double(5.0);
+```
 
 Or
 
-.. code-block:: java
-
+```java
 	doubleArray.add(new Double(5.0);
-
+```
 
 But with newer versions of Java, the conversion between primitive types and the corresponding wrapper class is now automatic. It is called **auto-boxing** and works in both directions (boxing or un-boxing).
 
@@ -437,11 +434,10 @@ Note: there is substantial overhead to using wrapper classes, so it is generally
 
 If I rewrite the two statements above to take advantage of auto-boxing, I get:
 
-.. code-block:: java
-
+```java
 	Double d = 5.0;
 	doubleArray.add(5.0);
-
+```
 
 ### Collections Framework
 
@@ -455,8 +451,7 @@ We’ll have a look at some of these later in the module.
 A useful addition to Java 5 was the enhanced for loop. Let see how it works! 
 In the enhanced for loop, the array index is not necessary for the retrieval of an array element. Below is a traditional for loop:
 
-.. code-block:: java
-
+```java
 	int data[5] = {2,4,8,16,32};
 
 	for (int i=0; i<5; i++)
@@ -465,12 +460,11 @@ In the enhanced for loop, the array index is not necessary for the retrieval of 
 	   System.out.println("Output: " + a);
 	}
 
-
+```
 
 With the enhanced for loop we can retrieve array elements without having to specify the index: 
 
-.. code-block:: java
- 
+```java 
 	int data[5] = {2,4,8,16,32};
 
 	for(int a:data)    //  check syntax, it's colon not semi-colon 
@@ -478,6 +472,7 @@ With the enhanced for loop we can retrieve array elements without having to spec
 	   System.out.println("Output: "+ a);
 	}
 
+```
 
 At the beginning of each loop iteration, the next element is assigned to the variable ‘a’. Then the loop body is executed.  You should read this loop as "for each a in data".
 
@@ -490,8 +485,7 @@ This is actually specific to arrays and array lists but I want to mention it as 
 
 Referring back to our example in earlier:
 
-.. code-block:: java
-
+```java
 	import java.util.ArrayList; //could also use java.util.*;
 	public class ArrayListOfPersonTester
 	{
@@ -506,6 +500,7 @@ Referring back to our example in earlier:
 	   }
 	}
 
+```
 
 This is fine if I just want to print out the person’s first name, but what if I want to print out all his details?
 
@@ -513,35 +508,37 @@ Basically, every class has a ``toString()`` method. You may say "Mine hasn’t b
 
 In fact if you try to pass an object to ``System.out.print`` it will automatically invoke the ``toString()`` method for that object. E.g.
 
-.. code-block:: java
-
+```java
 	Person p1 = new Person("Jim", "Jones", 21);      
 	System.out.println(p1); // same as System.out.println(p1.toString());
 
+```
  
 And if you run it you get something like this as output:
 
-.. code-block:: java
-
+```java
 	Person@19821f
+
+```
 
 What does that mean? Well, that’s the default behaviour of the ``toString()`` method – it prints out the class name followed by a thing called the hash-code. 
 
 Not a lot of use to us! BUT, we can over-ride the default behaviour and provide our own to do whatever we wish: - 
 
-.. code-block:: java
-
+```java
    public String toString()
    {
       return firstName + " " + lastName + " " + age;
    }
 
+```
+
 
 And now our output would be:
 
-.. code-block:: java
-
+```java
 	Jim Jones 21
+```
 
 Notice the declaration/signature (i.e. the first line) of our method – it basically tells us that it doesn’t take any parameters and it will return a ``String`` to the caller – if we override the ``toString`` method for any class then the declaration will ALWAYS be the same (why? It’s to do with inheritance, which is another day’s work).
 
@@ -552,21 +549,25 @@ ALSO – don’t be tempted to do a ``System.out.print`` inside the method body/
 
 #.	We declare arrays like this (example creates an array of 10 ints) : 
 	
-	.. code-block:: java
-
+	```java
 		int[] myArray1 = new int[10];
+
+	```
 
 	(example creates array of 5 BankAccount objects):
 
-	.. code-block:: java
-
+	```java
 		BankAccount[] myArray2 = new BankAccount[5];
+
+	```
 
 #.	We declare ArrayLists like this (example creates ArrayList of BankAccounts)
 
-	.. code-block:: java
-
+	```java
 		ArrayList<BankAccount> myArrayList= new ArrayList<BankAccount>();
+
+	```
+
 
 
 #.	Arrays are fixed size (set when you declare them); ArrayLists can grow and shrink (initially they are empty – size of 0 – when you declare them).
@@ -579,15 +580,17 @@ ALSO – don’t be tempted to do a ``System.out.print`` inside the method body/
 
 #.	Arrays use the ``[]`` operators to index the array (both for reading and setting data). E.g. the following will set the 3rd element to 6:
 
-	.. code-block:: java
-
+	```java
 		myArray1[2] = 6;
+
+	```
 
 	Note that arrays have no methods – the only extra little piece of data you get with arrays is a ``length`` variable that stores the length of the array – e.g. the following will print out '5':
 
-	.. code-block:: java
-
+	```java
 		System.out.println(myArray2.length);
+
+	```
 
 
 #.	ArrayLists are objects – in fact they are container objects – an object which contains other objects (like BankAccount objects). 
@@ -598,9 +601,10 @@ ALSO – don’t be tempted to do a ``System.out.print`` inside the method body/
 
 #.	You can initialise an array when you declare it, but you cannot do this with an ArrayList. e.g. the following will create an array of length 5 and assign it the values 6, 3, 47, 23, 1
 
-	.. code-block:: java
-
+	```java
 		int[] myArray3 = {6, 3, 47, 23, 1};
+
+	```
 
 
 
