@@ -122,7 +122,7 @@ Sounds like it will be a lot harder? NO! It’s the exact same thing (in fact, t
 The only potential little problem – from your point-of-view – is that you understand how to work with objects.
 
 
-### the Person class
+### ```Person``` class
 
 I’ll start off my creating a simple class (which we obviously need if we want to create and use objects). I’ll start with a bare-bones class to represent Person objects.
 
