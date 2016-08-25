@@ -167,23 +167,21 @@ Ok, so this gives me the ability to create objects of type ``Person``. It has th
 
 Here’s an example of an application (not really; it’s just some test code to let me play about with my objects,  but it could just as easily be some database implementation):
 
-.. code-block:: java
-	:linenos: 
-
+```java
 	public class ArrayOfPersonTester
 	{
 	   public static void main(String args[])
 	   {
 	      Person[] peopleDetails = new Person[2];      
 
-	      peopleDetails[0] = new Person("Jim", "Jones", 21);
+ 7:	      peopleDetails[0] = new Person("Jim", "Jones", 21);
 
 
-	      System.out.println(peopleDetails[0].getFirstName());       
+10:	      System.out.println(peopleDetails[0].getFirstName());       
 	   }
 	}
 
-
+```
 
 Note how I declare/create the array – same as before except the type is now my own class.
 
