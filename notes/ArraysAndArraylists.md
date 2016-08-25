@@ -1,5 +1,16 @@
 # Arrays & ArrayLists
 
+## Contents
+
+- [Introduction](#introduction)
+- [Using Arrays](#using-arrays)
+- [Arrays of objects](#arrays-of-objects)
+- [Array Caveats](#array-caveats)
+- [Two Dimensional Arrays](#two-dimensional-arrays)
+- [ArrayLists](#arrayLists)
+- [Enhanced for Loop](#enhanced-for-loop)
+- [toString() method](#tostring()-method)
+- [Summary](#summary)
 
 ## Introduction
 
