@@ -9,7 +9,7 @@
 - [Two Dimensional Arrays](#two-dimensional-arrays)
 - [ArrayLists](#arraylists)
 - [Enhanced for Loop](#enhanced-for-loop)
-- [```toString``` method](#tostring-method)
+- [```toString()``` method](#tostring-method)
 - [Summary](#summary-of-array-vs-arraylist)
 
 
@@ -491,7 +491,7 @@ At the beginning of each loop iteration, the next element is assigned to the var
 Note: you can do the same thing with array lists. One thing to note though, is that the array index is no longer available to us, and sometimes we might want it – if so, use the traditional for loop.
 
 
-## toString() method
+## ```toString()``` method
 
 This is actually specific to arrays and array lists but I want to mention it as soon as possible.
 
