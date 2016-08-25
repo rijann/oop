@@ -60,17 +60,17 @@ The list begins with position 0 and ends with the position numbered one less tha
 
 When we access an item of the array, we treat it just as we would treat any single variable, but we use an index to specify which item in the array we want to access. For example, the code:
 
-.. code-block:: java
-
+```java
 	salaries[2]=26000;
+```
 
 will set the third element in the array salaries to the value 26000. 
 And if we wanted to print out the value stored in the last element we would use
 
-.. code-block:: java
-
+```java
 	System.out.print("Salary is " + salaries[9]);
 
+```
 
 ##### length instance field
 
@@ -83,16 +83,18 @@ Even though arrays have no methods they do have one instance field, called ``len
 
 What do you think the following array is going to be used to store?
 
-.. code-block:: java
-
+```java
 	String[] monthsOfYear = new String[12];
+
+```
 
 Ok now I’ve got my array, and I want to put the information in, so let’s start to do that:-
 
-.. code-block:: java
-
+```java
 	monthsOfYear[0] = "January";
 	monthsOfYear[1] = "February";
+
+```
 
 etc. A bit tedious! 
 
@@ -100,10 +102,11 @@ This is a situation where I know when I declare my array exactly what I want to 
 
 Luckily, there’s a quicker way to do this – I can intialise my array when I declare it; Like this:
 
-.. code-block:: java
-
+```java
 	//Declaring and initialising in one go
 	String[] monthsOfYear = {"January", "February", "March", "April", "May"};  
+
+```
 
 OK, I got fed up typing but you get the idea. You don’t tell the compiler the size of the array this time because it’s obvious (big enough to hold five ``String`` references).
 
@@ -123,8 +126,7 @@ The only potential little problem – from your point-of-view – is that you un
 
 I’ll start off my creating a simple class (which we obviously need if we want to create and use objects). I’ll start with a bare-bones class to represent Person objects.
 
-.. code-block:: java
-
+```java
 	// This is a very basic class to represent a person
 	// We could (and will) add lots more
 	public class Person
@@ -159,6 +161,7 @@ I’ll start off my creating a simple class (which we obviously need if we want 
 	   }
 	}
 
+```
 
 Ok, so this gives me the ability to create objects of type ``Person``. It has three instance fields to define its state, and just some accessor methods to access the state of an object. If there are loads of people to keep track of in my application then storing them in an array seems to be a good idea.
 
@@ -277,7 +280,6 @@ I’m not going to spend too long on this so I’ll launch straight into an exam
 You can create a two-dimensional array of 5 by 5 ``int`` values and assign it to a reference called matrix using this syntax:
 
 ```java
-
 	int[][] matrix = new int[5][5];
 ```
 
@@ -308,7 +310,7 @@ One final point to mention at this stage: arrays can be used to store objects or
 
 Let’s dive right in with a little example that utilises our ``Person`` class once again.
 
-.. code-block:: java
+```java
 
 	import java.util.ArrayList; //could also use java.util.*;
 
@@ -324,6 +326,8 @@ Let’s dive right in with a little example that utilises our ``Person`` class o
 	      
 	   }
 	}
+
+```
 
 This is the same code as used in array example but using an arraylist instead now. 
 
