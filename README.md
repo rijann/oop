@@ -6,5 +6,5 @@ A repository for OOP3 module.
 # Contents
 - [Processing Primer](./notes/ProcessingPrimer.md)
 - [Arrays & Arraylists](./notes/ArraysAndArraylists.md)
-
+- [Exercises](./exercises/ArraysAndArraylists.md)
 
