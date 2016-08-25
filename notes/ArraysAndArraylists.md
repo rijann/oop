@@ -456,8 +456,7 @@ ArrayLists are designed to work with the ``Collections`` framework, which provid
 We’ll have a look at some of these later in the module.
 
  
-Enhanced for Loop
------------------
+## Enhanced for Loop
 
 A useful addition to Java 5 was the enhanced for loop. Let see how it works! 
 In the enhanced for loop, the array index is not necessary for the retrieval of an array element. Below is a traditional for loop:
