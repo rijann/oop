@@ -7,7 +7,7 @@
 - [Arrays of objects](#arrays-of-objects)
 - [Array Caveats](#array-caveats)
 - [Two Dimensional Arrays](#two-dimensional-arrays)
-- [ArrayLists](#arrayLists)
+- [ArrayLists](#arraylists)
 - [Enhanced for Loop](#enhanced-for-loop)
 - [toString() method](#tostring()-method)
 - [Summary](#summary)
