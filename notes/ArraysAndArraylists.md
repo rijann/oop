@@ -296,7 +296,7 @@ Just like arrays, the ```ArrayList``` class (```java.util.ArrayList```) lets you
 -	The Arraylist class supplies methods for many common tasks such as inserting and removing elements.
 
 So why would anyone use arrays when they can use something that is “better”?
-Well, arrays are faster, have less overhead, offer more control, and are probably simpler to work with for small sets of data (e.g. the months of the year example – section 1.3.2).
+Well, arrays are faster, have less overhead, offer more control, and are probably simpler to work with for small sets of data.
 
 Arraylists are a type of managed array, which means that the class takes care of a lot of details and therefore you don’t have to worry about them, so they’re much better from that point-of-view. This contrast with arrays – I mentioned above they offer more control to the programmer but, in the words of Peter Parker’s Granny/Granda “with great power comes great responsibility”.
 
@@ -308,20 +308,20 @@ One final point to mention at this stage: arrays can be used to store objects or
 Let’s dive right in with a little example that utilises our ``Person`` class once again.
 
 ```java
-	import java.util.ArrayList; //could also use java.util.*;
+import java.util.ArrayList; //could also use java.util.*;
 
-	public class ArrayListOfPersonTester
-	{
-	   public static void main(String args[])
-	   {
-	      ArrayList<Person> peopleDetails = new ArrayList<Person>();
-	      
-	      peopleDetails.add(new Person("Jim", "Jones", 21));
+public class ArrayListOfPersonTester
+{
+   public static void main(String args[])
+   {
+      ArrayList<Person> peopleDetails = new ArrayList<Person>();
+      
+      peopleDetails.add(new Person("Jim", "Jones", 21));
 
-	      System.out.println(peopleDetails.get(0));
-	      
-	   }
-	}
+      System.out.println(peopleDetails.get(0));
+      
+   }
+}
 
 ```
 
@@ -329,10 +329,10 @@ This is the same code as used in array example but using an arraylist instead no
 
 The main points to note about the code above are:
 
-#.	Look at how we declare our array:  
+1. Look at how we declare our array:  
 
 	```java
-		ArrayList<Person> peopleDetails = new ArrayList<Person>();
+	ArrayList<Person> peopleDetails = new ArrayList<Person>();
 
 	```
 
@@ -346,7 +346,7 @@ The main points to note about the code above are:
 
 	
 
-#.	Once we’ve created our arraylist we need to be able to put "things" 
+2.	Once we’ve created our arraylist we need to be able to put "things" 
 	(Person objects in this example) into it and get "things" out of it.
 
 	Instead of using the square bracket notation (like we did with arrays), we use the methods provided by the ArrayList class. The most common ones used are ``add`` and ``get``. It is important that you can work with these methods (at the very least) and we’ll talk more about them in our labs.
