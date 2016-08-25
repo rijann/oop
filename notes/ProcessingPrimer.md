@@ -1,8 +1,6 @@
 # Processing Primer
 
 
-[//]: <> (This is a comment, it will not be included)
-
 # Contents
 
 - [What is Processing?](#what-is-processing)
@@ -142,9 +140,9 @@ This sequential flow is typical of all programs you wrote in *OOP* last year.
 
 However, in *Problem Solving with Robots* a different way of executing instructions was seen with the Robocode software.  
 The flow is event driven.
-Instructions were executed when an event occured.  For example, a block of code was executed when the robot scanned another robot, or a block of code was executed when the robot was hit by a bullet.
+Instructions were executed when an event occured.  For example, a block of code was executed when the robot scanned another robot, or a block of code was executed when the robot was hit by a bullet.  In later modules you will use this event-driven again for GUI programming.
 
-The Processing environment typically uses 2 blocks of code to control the flow of its programs - ```setup()``` and ```draw()```.
+The Processing environment typically uses 2 blocks of code to control the flow of its programs - the methods ```setup()``` and ```draw()```.
 
 ```setup()``` is used to execute instructions at the start of the program only **once**.
 
@@ -215,6 +213,10 @@ void draw()
 }
 ```
 Other built-in variables are [``mouseY``](https://processing.org/reference/mouseY.html "mouseY()") and [``width``](https://processing.org/reference/width.html "width()").  And there are many more to find at the [Processing Reference](https://processing.org/reference/)
+
+
+# Processing Built-In Methods
+
 
 
 # Processing Methods

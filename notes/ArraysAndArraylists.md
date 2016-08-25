@@ -1,24 +1,8 @@
-.. _ArraysArraylists:
-
-.. |br| raw:: html
-
-		<br>
+# Arrays & ArrayLists
 
 
+## Introduction
 
-.. SEE for MD version ::::::::  https://github.com/barcaxi/psol
-
-
-
-
-
-
-Arrays & ArrayLists
-===================
-
-
-Introduction
-------------
 In order to process large quantities of data you need to collect values in a data structure. Two of the most commonly used data structures in Java are *arrays* and *array lists*. 
 
 Some things to note before we start:
@@ -38,14 +22,14 @@ We’ll start with arrays and have a quick look at:
 We’ll concentrate primarily on so-called one-dimensional arrays. It is useful to understand two-dimensional (and even three-dimensional) arrays, but if we’re not totally at ease with 1D then there’s little point. 
 
 
-Using Arrays
-------------
+## Using Arrays
+
 The purpose of a 1D array is to enable us to represent a group of similar items (elements) as a list, with each item having a position in the list. The items in a list must all be of the same type, whether primitive/basic data type (e.g., ``int``, ``double``, ``boolean``) or reference/class type (i.e. objects). The position of each item in the list is represented by a positive integer.  
 
 At this point and important issue to bear in mind is that an array is a contiguous block of memory locations.
 
 
-**Array Declarations**
+### Array Declarations
 
 Remember, before we can use any variable/object we must declare it (e.g. you can’t just go ``x = 10;`` if you haven’t specified ``int x;`` beforehand). The same holds true for arrays: we must declare the array before we use it (though, just like other variables, we can initialize the array when we declare it  e.g. ``int x = 10;``).
 To store the marks of  200 students, you can declare an array, marks, of size 200 and can store the marks of as many students: 
@@ -58,7 +42,7 @@ To store the marks of  200 students, you can declare an array, marks, of size 20
 As you already know, array index element number always starts with 0(zero).
 
 
-**Accessing an array**
+#### Accessing an array
 
 Here’s another example of an array declaration, this time with annotations:
  
@@ -89,14 +73,14 @@ And if we wanted to print out the value stored in the last element we would use
 	System.out.print("Salary is " + salaries[9]);
 
 
-**length instance field**
+##### length instance field
 
 Actually, we probably wouldn’t use ``salaries[9]`` to print the last element – we’d probably use ``salaries[salaries.length – 1]`` instead.
 
 Even though arrays have no methods they do have one instance field, called ``length``, which returns the number of elements that the array can hold.
 
 
-**Initalising Arrays**
+### Initalising Arrays
 
 What do you think the following array is going to be used to store?
 
@@ -128,16 +112,16 @@ Ok, that’s the basics of arrays – we know how to create them, how to put inf
 
 
 
-Arrays of objects
------------------
+## Arrays of objects
 
 What if we want to store arrays of objects, rather than simple (primitive) data types like integers. 
 
 Sounds like it will be a lot harder? NO! It’s the exact same thing (in fact, the monthsOfYear example above is an array of ``String`` objects).
 The only potential little problem – from your point-of-view – is that you understand how to work with objects.
 
-the ``Person`` class
-~~~~~~~~~~~~~~~~~~~~
+
+### the Person class
+
 I’ll start off my creating a simple class (which we obviously need if we want to create and use objects). I’ll start with a bare-bones class to represent Person objects.
 
 .. code-block:: java
@@ -207,11 +191,9 @@ On line 10 I get something out of the array – It looks a bit odd at first view
 
 
 
-Array Caveats
--------------
+## Array Caveats
 
-Don’t go out-of-bounds!
-~~~~~~~~~~~~~~~~~~~~~~~
+### Don’t go out-of-bounds!
 
 In the code above, we created an array capable of holding 2 person objects. If I change line 10 to:
 
@@ -230,8 +212,8 @@ I get something like this when I try to run it:
 Which basically means that I’ve tried to access an array element that doesn’t exist (valid indices are 0 and 1).
 
 
-Make sure that an array element contains something
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Make sure that an array element contains something
+
 Again, going back to previous code, you might imagine that the following is fine:
 
 .. code-block:: java
@@ -267,14 +249,13 @@ NOTE: you can always check an array element before you use it,  e.g.
 
 You only need to do this if you’re not sure, of course.
 
-Arrays of primitives are different to arrays of objects
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+### Arrays of primitives are different to arrays of objects
 
 Arrays of objects contains references to objects (or null references). Arrays of primitives contains values. I’ll illustrate the difference in class.
 
 
-I always create the array when I declare my array variable
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### I always create the array when I declare my array variable
 
 It is perfectly legal to do something like this:
 
@@ -288,8 +269,8 @@ However, it is generally a better idea (as a beginner) to combine both statement
 The reason? Sometimes you’ll forget the second statement and then you’ll have an array reference that references nothing (null) and of course, it will crash when you try to do something with the (non-existant) array.
 
 
-Two dimensional arrays
-----------------------
+## Two dimensional arrays
+
 Thus far, you have used one-dimensional arrays to model linear collections of elements. You can use a two-dimensional array to represent a matrix or a table.
 
 I’m not going to spend too long on this so I’ll launch straight into an example.
@@ -310,12 +291,11 @@ The index of each subscript of a two-dimensional array is an ``int`` value start
 Parts (b) and (c) show assignment to an array element and initialisation of the 2D array.
 
 
-ArrayLists
-----------
+## ArrayLists
 
-Just like arrays, the ArrayList class (java.util.ArrayList) lets you store objects of the same type. However, Array lists offer two significant conveniences:
-•	Array lists can grow and shrink as needed – with arrays we often ‘guess’ the storage needed. Not a massive problem if we guess too big, but serious problems if we guess too small.
-•	The Arraylist class supplies methods for many common tasks such as inserting and removing elements.
+Just like arrays, the ```ArrayList``` class (```java.util.ArrayList```) lets you store objects of the same type. However, Array lists offer two significant conveniences:
+-	Array lists can grow and shrink as needed – with arrays we often ‘guess’ the storage needed. Not a massive problem if we guess too big, but serious problems if we guess too small.
+-	The Arraylist class supplies methods for many common tasks such as inserting and removing elements.
 
 So why would anyone use arrays when they can use something that is “better”?
 Well, arrays are faster, have less overhead, offer more control, and are probably simpler to work with for small sets of data (e.g. the months of the year example – section 1.3.2).
@@ -325,8 +305,8 @@ Arraylists are a type of managed array, which means that the class takes care of
 One final point to mention at this stage: arrays can be used to store objects or primitive data types; array lists can only store objects.
 
 
-Using ArrayLists
-----------------
+### Using ArrayLists
+
 Let’s dive right in with a little example that utilises our ``Person`` class once again.
 
 .. code-block:: java
@@ -373,8 +353,7 @@ The main points to note about the code above are:
 
 
 
-ArrayList Example
------------------
+### ArrayList Example
 
 I don’t want to spend much time going through each method in detail. Instead, I’ve presented an example below – see if you can anticipate the output (before looking at it – cover it up with your hand or a piece of paper!). Try to follow it by drawing the array on paper – it’s the best way to learn memory/reference based concepts.
 
@@ -431,8 +410,7 @@ Output:-
 
 
 
-ArrayLists and wrapper classes
-------------------------------
+### ArrayLists and wrapper classes
 
 ArrayList stores only object references. That's why, it's impossible to use primitive data types like double or int. We use so-called wrapper classes (like ``Integer`` or ``Double``).
 
@@ -464,16 +442,14 @@ If I rewrite the two statements above to take advantage of auto-boxing, I get:
 	doubleArray.add(5.0);
 
 
-Collections Framework
----------------------
+### Collections Framework
 
 ArrayLists are designed to work with the ``Collections`` framework, which provides static methods for searching, swapping, sorting etc.
 
 We’ll have a look at some of these later in the module.
 
  
-The enhanced for loop
----------------------
+## The enhanced for loop
 
 A useful addition to Java 5 was the enhanced for loop. Let see how it works! 
 In the enhanced for loop, the array index is not necessary for the retrieval of an array element. Below is a traditional for loop:
@@ -507,8 +483,7 @@ At the beginning of each loop iteration, the next element is assigned to the var
 Note: you can do the same thing with array lists. One thing to note though, is that the array index is no longer available to us, and sometimes we might want it – if so, use the traditional for loop.
 
 
-The ``toString()`` method
--------------------------
+## The ```toString()``` method
 
 This is actually specific to arrays and array lists but I want to mention it as soon as possible.
 
@@ -572,8 +547,7 @@ Notice the declaration/signature (i.e. the first line) of our method – it basi
 ALSO – don’t be tempted to do a ``System.out.print`` inside the method body/code – you simply return the information.
 
 
-Summary of Array Vs ArrayList
------------------------------
+## Summary of Array Vs ArrayList
 
 #.	We declare arrays like this (example creates an array of 10 ints) : 
 	
