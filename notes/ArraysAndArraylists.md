@@ -127,39 +127,39 @@ The only potential little problem – from your point-of-view – is that you un
 I’ll start off my creating a simple class (which we obviously need if we want to create and use objects). I’ll start with a bare-bones class to represent Person objects.
 
 ```java
-	// This is a very basic class to represent a person
-	// We could (and will) add lots more
-	public class Person
-	{
-	   //instance fields (should always be private)
-	   private String firstName;
-	   private String lastName;
-	   private int age;
-	   
-	   //constructor (Note: no default constructor)
-	   public Person(String f, String l, int a)
-	   {
-	      firstName = f;
-	      lastName = l;
-	      age = a;
-	   }
-	   
-	   //accessor methods
-	   public String getFirstName()
-	   {
-	      return firstName;
-	   }
-	   
-	   public String getLastName()
-	   {
-	      return lastName;
-	   }
-	   
-	   public int getAge()
-	  {
-	      return age;
-	   }
-	}
+// This is a very basic class to represent a person
+// We could (and will) add lots more
+public class Person
+{
+   //instance fields (should always be private)
+   private String firstName;
+   private String lastName;
+   private int age;
+   
+   //constructor (Note: no default constructor)
+   public Person(String f, String l, int a)
+   {
+      firstName = f;
+      lastName = l;
+      age = a;
+   }
+   
+   //accessor methods
+   public String getFirstName()
+   {
+      return firstName;
+   }
+   
+   public String getLastName()
+   {
+      return lastName;
+   }
+   
+   public int getAge()
+  {
+      return age;
+   }
+}
 
 ```
 
@@ -227,7 +227,7 @@ But now I get:
 
 What does this mean?
 
-Well, if you refer back to the code, you’ll see that I actually made the first array element refer  to a Person:
+Well, if you refer back to the code, you’ll see that I actually made the first array element refer  to a ```Person```:
 
 ```java
        peopleDetails[0] = new Person("Jim", "Jones", 21);
@@ -282,7 +282,7 @@ You can create a two-dimensional array of 5 by 5 ``int`` values and assign it to
 
 Two subscripts are used in a two-dimensional array, one for the row, and the other for the column. As in a one-dimensional array, the index for each subscript is of the ``int`` type and starts from 0, as shown here:
 
-![alt text](../images/fig2.png "")
+![alt text](../images/fig3.png "")
  
 The index of each subscript of a two-dimensional array is an ``int`` value starting from 0.
 
