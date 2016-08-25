@@ -12,7 +12,7 @@
 - [toString() method](#tostring()-method)
 - [Summary](#summary)
 
-## Introduction
+## Introduction 
 
 In order to process large quantities of data you need to collect values in a data structure. Two of the most commonly used data structures in Java are *arrays* and *array lists*. 
 
