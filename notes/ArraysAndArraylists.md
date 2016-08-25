@@ -1,7 +1,18 @@
 # Arrays & ArrayLists
 
+## Contents
 
-## Introduction
+- [Introduction](#introduction)
+- [Using Arrays](#using-arrays)
+- [Arrays of objects](#arrays-of-objects)
+- [Array Caveats](#array-caveats)
+- [Two Dimensional Arrays](#two-dimensional-arrays)
+- [ArrayLists](#arraylists)
+- [Enhanced for Loop](#enhanced-for-loop)
+- [toString() method](#tostring()-method)
+- [Summary](#summary)
+
+## Introduction 
 
 In order to process large quantities of data you need to collect values in a data structure. Two of the most commonly used data structures in Java are *arrays* and *array lists*. 
 
@@ -445,7 +456,8 @@ ArrayLists are designed to work with the ``Collections`` framework, which provid
 We’ll have a look at some of these later in the module.
 
  
-## The enhanced for loop
+Enhanced for Loop
+-----------------
 
 A useful addition to Java 5 was the enhanced for loop. Let see how it works! 
 In the enhanced for loop, the array index is not necessary for the retrieval of an array element. Below is a traditional for loop:
@@ -478,7 +490,7 @@ At the beginning of each loop iteration, the next element is assigned to the var
 Note: you can do the same thing with array lists. One thing to note though, is that the array index is no longer available to us, and sometimes we might want it – if so, use the traditional for loop.
 
 
-## The ```toString()``` method
+## toString() method
 
 This is actually specific to arrays and array lists but I want to mention it as soon as possible.
 
