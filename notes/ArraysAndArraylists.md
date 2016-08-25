@@ -346,7 +346,7 @@ The main points to note about the code above are:
 
 	
 
-2.	Once we’ve created our arraylist we need to be able to put "things" 
+2.  Once we’ve created our arraylist we need to be able to put "things" 
 	(Person objects in this example) into it and get "things" out of it.
 
 	Instead of using the square bracket notation (like we did with arrays), we use the methods provided by the ArrayList class. The most common ones used are ``add`` and ``get``. It is important that you can work with these methods (at the very least) and we’ll talk more about them in our labs.
@@ -399,7 +399,6 @@ I don’t want to spend much time going through each method in detail. Instead, 
 Output:-
 
 ```text
-
 	Initial size of al:  0
 	size of al after additions 7
 	contents of al: [C, A2, A, E, B, D, F]
@@ -422,7 +421,7 @@ Traditionally, you would create a wrapper object like this:
 	Double d = new Double(5.0);
 ```
 
-Or
+OR
 
 ```java
 	doubleArray.add(new Double(5.0);
@@ -547,7 +546,7 @@ ALSO – don’t be tempted to do a ``System.out.print`` inside the method body/
 
 ## Summary of Array Vs ArrayList
 
-#.	We declare arrays like this (example creates an array of 10 ints) : 
+1.  We declare arrays like this (example creates an array of 10 ints) : 
 	
 	```java
 		int[] myArray1 = new int[10];
@@ -561,24 +560,20 @@ ALSO – don’t be tempted to do a ``System.out.print`` inside the method body/
 
 	```
 
-#.	We declare ArrayLists like this (example creates ArrayList of BankAccounts)
+2.	We declare ArrayLists like this (example creates ArrayList of BankAccounts)
 
 	```java
 		ArrayList<BankAccount> myArrayList= new ArrayList<BankAccount>();
 
 	```
 
-
-
-#.	Arrays are fixed size (set when you declare them); ArrayLists can grow and shrink (initially they are empty – size of 0 – when you declare them).
+3.	Arrays are fixed size (set when you declare them); ArrayLists can grow and shrink (initially they are empty – size of 0 – when you declare them).
 
 	
 
-#.	Arrays can be used to store primitive data types or objects; ArrayLists can only store objects – if you want to store primitives in an ArrayList you have to use the associated wrapper objects (``Integer`` instead of ``int``; ``Double`` instead of ``double``; etc)
+4.	Arrays can be used to store primitive data types or objects; ArrayLists can only store objects – if you want to store primitives in an ArrayList you have to use the associated wrapper objects (``Integer`` instead of ``int``; ``Double`` instead of ``double``; etc)
 
-	
-
-#.	Arrays use the ``[]`` operators to index the array (both for reading and setting data). E.g. the following will set the 3rd element to 6:
+5.	Arrays use the ``[]`` operators to index the array (both for reading and setting data). E.g. the following will set the 3rd element to 6:
 
 	```java
 		myArray1[2] = 6;
@@ -592,14 +587,12 @@ ALSO – don’t be tempted to do a ``System.out.print`` inside the method body/
 
 	```
 
-
-#.	ArrayLists are objects – in fact they are container objects – an object which contains other objects (like BankAccount objects). 
+6.	ArrayLists are objects – in fact they are container objects – an object which contains other objects (like BankAccount objects). 
 
 	We don’t use [] to access them. Instead we use methods, the most common of which are:- ``add()``, ``get()``, ``size()``, ``set()`` and ``remove()``.
 
-	
 
-#.	You can initialise an array when you declare it, but you cannot do this with an ArrayList. e.g. the following will create an array of length 5 and assign it the values 6, 3, 47, 23, 1
+7.	You can initialise an array when you declare it, but you cannot do this with an ArrayList. e.g. the following will create an array of length 5 and assign it the values 6, 3, 47, 23, 1
 
 	```java
 		int[] myArray3 = {6, 3, 47, 23, 1};
@@ -607,9 +600,5 @@ ALSO – don’t be tempted to do a ``System.out.print`` inside the method body/
 	```
 
 
-
-
-
-
-
-[End of :ref:`ArraysArraylists`][`noucamp moodle <http://www.noucamp.org/moodle/>`_]
+---
+[OOP](https://github.com/barcaxi/oop)
