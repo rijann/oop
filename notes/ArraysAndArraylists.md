@@ -203,10 +203,9 @@ In the code above, we created an array capable of holding 2 person objects. If I
 
 I get something like this when I try to run it:
 
-.. code-block:: java
-
+```java
 	Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2 at ArrayOfPersonTester.main(ArrayOfPersonTester.java:10)
-
+```
 
 Which basically means that I’ve tried to access an array element that doesn’t exist (valid indices are 0 and 1).
 
@@ -215,36 +214,37 @@ Which basically means that I’ve tried to access an array element that doesn’
 
 Again, going back to previous code, you might imagine that the following is fine:
 
-.. code-block:: java
-
+```java
 	System.out.println(peopleDetails[1].getFirstName());
+```
 
 But now I get:
 
-.. code-block:: java
-
+```java
 	Exception in thread "main" java.lang.NullPointerException at ArrayOfPersonTester.main(ArrayOfPersonTester.java:10)
+
+```
 
 What does this mean?
 
 Well, if you refer back to the code, you’ll see that I actually made the first array element refer  to a Person:
 
-.. code-block:: java
-
+```java
        peopleDetails[0] = new Person("Jim", "Jones", 21);
 
+```
 
 But the second element refers to nothing (it has a ``null`` reference), so when I try to actually do something with the object referred to in the array (i.e. get the first name of the person), of course it’s going to crash at run-time because there is no person.
 
 NOTE: you can always check an array element before you use it,  e.g.
 
-.. code-block:: java
+```java
+	if (peopleDetails[1] != null)
+	{
+		System.out.println(peopleDetails[1].getFirstName());
+	}
 
-      if (peopleDetails[1] != null)
-      {
-         System.out.println(peopleDetails[1].getFirstName());
-      }
-
+```
 
 You only need to do this if you’re not sure, of course.
 
@@ -258,11 +258,11 @@ Arrays of objects contains references to objects (or null references). Arrays of
 
 It is perfectly legal to do something like this:
 
-.. code-block:: java
-
+```java
 	int marks[]; //declare an array reference
 	marks = new int[200]; //create space for the array and reference it
 
+```
 
 However, it is generally a better idea (as a beginner) to combine both statements into a single one.
 The reason? Sometimes you’ll forget the second statement and then you’ll have an array reference that references nothing (null) and of course, it will crash when you try to do something with the (non-existant) array.
