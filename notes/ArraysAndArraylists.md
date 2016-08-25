@@ -9,7 +9,7 @@
 - [Two Dimensional Arrays](#two-dimensional-arrays)
 - [ArrayLists](#arraylists)
 - [Enhanced for Loop](#enhanced-for-loop)
-- [toString method](#tostring-method)
+- [toString() method](#tostring-method)
 - [Summary](#summary-of-array-vs-arraylist)
 
 
