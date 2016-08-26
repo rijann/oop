@@ -4,7 +4,14 @@
 # Contents
 
 
-# Part 
+# Part 1 - Run Processing
+
+Start and run pros
+
+
+
+
+# Part 2 - Shapes & Colours
 
 1.	Using the blank graph here to draw the primitive shapes specified by the code:
 
@@ -115,5 +122,5 @@
 	line(250, 195, 260, 205);  
 
 	```
-	
+
 see file:///C:/Users/tomo/Desktop/Learning_Processing_-_A_Beginners_Guide_to_Programming_Images_Animation_and_Interaction_--_Daniel_Shiffman.pdf
