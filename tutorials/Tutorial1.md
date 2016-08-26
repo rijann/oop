@@ -42,24 +42,24 @@
 
 	![alt text](../images/tutorial1_gridshapesRGB.png "RGB colours")
 
-```java
-size(200, 200);
+	```java
+	size(200, 200);
 
-fill(___, ___, ___);          // red 
-rect(10, 10, 180, 180);  
+	fill(___, ___, ___);          // red 
+	rect(10, 10, 180, 180);  
 
-fill(___, ___, ___);          // green
-ellipse(100, 100, 180, 180);
+	fill(___, ___, ___);          // green
+	ellipse(100, 100, 180, 180);
 
-stroke(___, ___, ___);        // yellow line
-line(10, 10, 190, 190); 
+	stroke(___, ___, ___);        // yellow line
+	line(10, 10, 190, 190); 
 
-stroke(___, ___, ___);        // purple points
-for (int i=10; i<190; i=i+5)
-  point(i, 100);
- 
-```
-You can use a this [Colour Picker](http://www.w3schools.com/colors/colors_picker.asp "Colour Picker") 
+	stroke(___, ___, ___);        // purple points
+	for (int i=10; i<190; i=i+5)
+	  point(i, 100);
+	 
+	```
+	You can use a this [Colour Picker](http://www.w3schools.com/colors/colors_picker.asp "Colour Picker") 
 
 5.	Design a *simple* creature using simple shapes and colors. 
 	Draw the creature by hand using only points, lines, rectangles, and ellipses. 
