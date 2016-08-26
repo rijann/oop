@@ -66,6 +66,8 @@
 	Then attempt to write the code for the creature using commands like - ```point()```, 
 	```line()```, ```rect( )```, ```ellipse()```, ```stroke()``` , and ```fill( )```. 
 
+	![alt text](../images/zoog.png "")
+
 	You will get to use this creature in later exercises.
 
 
