@@ -61,6 +61,25 @@
 	```
 	You can use a this [Colour Picker](http://www.w3schools.com/colors/colors_picker.asp "Colour Picker") 
 
+	ANSWER:
+
+	```java
+	size(200, 200);
+
+	fill(255, 0, 0);            // red 
+	rect(10, 10, 180, 180);  
+	fill(0, 255, 0);            // green
+	ellipse(100, 100, 180, 180);
+
+	stroke(255, 255, 0);   // yellow line
+	line(10, 10, 190, 190); 
+
+	stroke(255, 0, 255);   // purple points
+	for (int i=10; i<190; i=i+5)
+	  point(i, 100);
+
+	```
+
 5.	Design a *simple* creature using simple shapes and colors. 
 	Draw the creature by hand using only points, lines, rectangles, and ellipses. 
 	Then attempt to write the code for the creature using commands like - ```point()```, 
@@ -70,5 +89,31 @@
 
 	You will get to use this creature in later exercises.
 
+	ANSWER:
 
+	```java
+	size(800, 600);
+
+	// Body
+	stroke(0);
+	fill(150);
+	rectMode(CENTER); 
+	rect(240, 145, 20, 100);
+
+	// Head
+	fill(255);
+	ellipse(240, 115, 60, 60); 
+
+	// Eyes
+	fill(0); 
+	ellipse(221, 115, 16, 32); 
+	ellipse(259, 115, 16, 32);
+
+	// Legs
+	stroke(0);
+	line(230, 195, 220, 205);
+	line(250, 195, 260, 205);  
+
+	```
+	
 see file:///C:/Users/tomo/Desktop/Learning_Processing_-_A_Beginners_Guide_to_Programming_Images_Animation_and_Interaction_--_Daniel_Shiffman.pdf
