@@ -61,8 +61,10 @@ for (int i=10; i<190; i=i+5)
 ```
 You can use a this [Colour Picker](http://www.w3schools.com/colors/colors_picker.asp "Colour Picker") 
 
-#.	Design a *simple* creature using simple shapes and colors. 
-	Draw the creature by hand using only points, lines, rectangles, and ellipses. Then attempt to write the code for the creature using commands like - ```point()```, ```line()```, ```rect( )```, ```ellipse()```, ```stroke()``` , and ```fill( )```. 
+5.	Design a *simple* creature using simple shapes and colors. 
+	Draw the creature by hand using only points, lines, rectangles, and ellipses. 
+	Then attempt to write the code for the creature using commands like - ```point()```, 
+	```line()```, ```rect( )```, ```ellipse()```, ```stroke()``` , and ```fill( )```. 
 
 	You will get to use this creature in later exercises.
 
