@@ -33,9 +33,11 @@ for(int i=10;i<190;i=i+5)
 ```
 
 3. Give the instructions to draw the following output
+
 ![alt text](../images/tutorial1_squares.png "")
 
 4. Provide the missing RGB values for the colours needed in the code:
+
 ![alt text](../images/tutorial1_gridshapesRGB.png "RGB colours")
 
 ```java
