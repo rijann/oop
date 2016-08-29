@@ -74,14 +74,15 @@
 
 # Part 2 - Shapes & Colours
 
-1.	Using the blank graph here to draw the primitive shapes specified by the code:
+1.	Using the blank graph [here](https://github.com/barcaxi/oop/blob/master/notes/grid.docx) to draw the primitive shapes specified by the code:
 
 	```java
-	line(0,0,19,6);
-	point(0,2);
-	point(0,4);
-	rect(5,5,10,10);
-	ellipse(15,15,4,4); 
+	line(0, 0, 19, 6);
+	point(0, 2);
+	point(0, 4);
+	rect(5, 5, 10, 10);
+	ellipse(15, 15, 4, 4); 
+
 	```
 
 2.	Given the shapes shown below provide the shape drawing instructions for it.
