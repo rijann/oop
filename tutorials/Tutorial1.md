@@ -1,9 +1,6 @@
 # Tutorial #1 - Processing Primer
 
 
-# Contents
-
-
 # Part 1 - Run Processing
 
 1.	Run the *Processing* tool by choosing:
@@ -30,9 +27,10 @@
 	Choose any of the other example programs and run them too.
 
 
-3.	Create a new sketch (aka program) using the code below and run it:
 
-	```java
+3.	Create a new sketch (aka program) called [tut01_01_shapes](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_01_shapes) using the code below and run it:
+
+	```java	
 	size(300, 200);
 
 	// line
@@ -51,8 +49,8 @@
 
 	```
 
-4.	The code above works because there are no errors in it.
-	The code below has errors.  
+4.	The program above works because there are no errors in it.
+	The program ``tut01_02_errors`` below has errors.  
 	Carefully examine the error messages shown and fix them.
 
 	```java
@@ -71,8 +69,9 @@
 	POINT(200, 150);
 
 	println("Some simple shapes";
-
+	
 	```
+
 # Part 2 - Shapes & Colours
 
 1.	Using the blank graph here to draw the primitive shapes specified by the code:
