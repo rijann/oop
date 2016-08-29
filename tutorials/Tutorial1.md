@@ -28,7 +28,7 @@
 
 
 
-3.	Create a new sketch (aka program) called [tut01_01_shapes](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_01_shapes) using the code below and run it:
+3.	Create a new sketch (aka program) called ``[tut01_01_shapes](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_01_shapes)`` using the code below and run it:
 
 	```java	
 	size(300, 200);
