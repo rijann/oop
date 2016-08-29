@@ -28,7 +28,7 @@
 
 
 
-3.	Create a new sketch (aka program) called ``[tut01_01_shapes](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_01_shapes)`` using the code below and run it:
+3.	Create a new sketch (aka program) called [tut01_01_shapes](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_01_shapes) using the code below and run it:
 
 	```java	
 	size(300, 200);
@@ -50,7 +50,7 @@
 	```
 
 4.	The program above works because there are no errors in it.
-	The program ``tut01_02_errors`` below has errors.  
+	The program [tut01_02_errors](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_02_errors) below has errors.  
 	Carefully examine the error messages shown and fix them.
 
 	```java
