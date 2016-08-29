@@ -199,7 +199,7 @@ void draw()
   x++;                      // add 1 to x
 }
 ```
-![](../images/ellipseMoving.jpg "Animated Ellipse")
+![](../images/ellipseMoving.gif "Animated Ellipse")
 
 These 2 blocks of code will form the template of all of our programs from now on.
 
