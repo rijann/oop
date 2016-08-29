@@ -209,7 +209,7 @@ These 2 blocks of code will form the template of all of our programs from now on
 
 Processing has some handy built-in system variables that can be used.
 
-For example [``mouseX``](https://processing.org/reference/mouseX.html "mouseX()") and [``height``](https://processing.org/reference/height.html "height()") variables are used here in the program [ellipse_tracking](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMoving/ellipseTracking.pde).
+For example [``mouseX``](https://processing.org/reference/mouseX.html "mouseX()") and [``height``](https://processing.org/reference/height.html "height()") variables are used here in the program [ellipse_tracking](https://github.com/barcaxi/oop/tree/master/code/notes/ellipseTracking).
 
 ```java
 // runs one time
