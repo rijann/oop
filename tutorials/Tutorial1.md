@@ -192,9 +192,28 @@
 
 	![alt text](../images/tutorial1_triangle.png "") 
 
+2.	Use the reference to find a method that sets the thickness of lines drawn around shapes.
+	Modify the code above to draw a line 10 pixels wide aound the triangle.
 
-see file:///C:/Users/tomo/Desktop/Learning_Processing_-_A_Beginners_Guide_to_Programming_Images_Animation_and_Interaction_--_Daniel_Shiffman.pdf
 
 
 ## Part 4 - Program Flow
 
+1.	Run the program [ellipse_moving](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMoving/ellipseMoving.pde).
+
+2.	Modify the code so the ellipse moves twice as fast across the screen.
+
+3.	Comment out the ``background()`` method and run the code again.
+	Can you explain why you see a trail of ellipses.  Restore the background when finished.
+
+4.	Modify the code so a second red coloured ellipse starts at the right hand side and moves from right to left across the canvas.  Comment it out when done.
+
+5.	Modify the code so the white ellipse *bounces* off the sides of the canvas continuously.
+
+	![](../images/ellipseBouncing.gif "Bouncing Ellipse")
+
+
+
+## Part 5 - Built-In Variables
+
+1.	Run the program [ellipse_tracking](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMoving/ellipseTracking.pde).
