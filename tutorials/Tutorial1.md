@@ -6,11 +6,73 @@
 
 # Part 1 - Run Processing
 
-Start and run pros
+1.	Run the *Processing* tool by choosing:
+
+	```
+	Start> Programming> processing
+	```
+
+	You should then see the Processing environment:
+
+	![alt text](../images/processingStartup.png "")
 
 
+2.	Run a sample program (aka sketch)
+
+	Choose:
+
+	```
+	File> Examples... Basics> Color> Brightness
+	```
+
+	and press the *run* button.
+
+	Choose any of the other example programs and run them too.
 
 
+3.	Create a new sketch (aka program) using the code below and run it:
+
+	```java
+	size(300, 200);
+
+	// line
+	line(0, 0, 150, 100);
+
+	// rectangle
+	rect(150, 0, 300, 100);
+
+	// ellipse
+	ellipse(50, 150, 50, 50);
+
+	// point
+	point(200, 150);
+
+	println("Some simple shapes");
+
+	```
+
+4.	The code above works because there are no errors in it.
+	The code below has errors.  
+	Carefully examine the error messages shown and fix them.
+
+	```java
+	size(300, 200);
+
+	// line
+	line();
+
+	// rectangle
+	rect(150, 0, 300, 100)
+
+	// ellipse
+	ellipse(50, 150, 50, 50);
+
+	// point
+	POINT(200, 150);
+
+	println("Some simple shapes";
+
+	```
 # Part 2 - Shapes & Colours
 
 1.	Using the blank graph here to draw the primitive shapes specified by the code:
@@ -87,7 +149,7 @@ Start and run pros
 
 	```
 
-5.	Design a *simple* creature using simple shapes and colors. 
+5.	Design your own *simple* creature using simple shapes and colors. 
 	Draw the creature by hand using only points, lines, rectangles, and ellipses. 
 	Then attempt to write the code for the creature using commands like - ```point()```, 
 	```line()```, ```rect( )```, ```ellipse()```, ```stroke()``` , and ```fill( )```. 
@@ -99,27 +161,27 @@ Start and run pros
 	ANSWER:
 
 	```java
-	size(800, 600);
+	size(500, 400);
 
-	// Body
-	stroke(0);
-	fill(150);
+	// body
+	fill(150, 150, 150);
 	rectMode(CENTER); 
 	rect(240, 145, 20, 100);
 
-	// Head
-	fill(255);
+	// head
+	fill(255, 255, 255);
 	ellipse(240, 115, 60, 60); 
 
-	// Eyes
-	fill(0); 
+	// eyes
+	fill(0, 0, 0); 
 	ellipse(221, 115, 16, 32); 
 	ellipse(259, 115, 16, 32);
 
-	// Legs
-	stroke(0);
+	// legs
 	line(230, 195, 220, 205);
 	line(250, 195, 260, 205);  
+
+	println("My name is zoog");
 
 	```
 
