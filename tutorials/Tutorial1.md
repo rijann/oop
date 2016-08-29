@@ -185,4 +185,12 @@
 
 	```
 
+# Part 3 - Processing Reference
+
+1.	Using the [Processing Reference](https://processing.org/reference/ "Processing Reference"), try to draw a triangle in the program [tut01_03_rgb](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_03_rgb) using the ``triangle()`` method.  
+	It should then look like this:
+
+	![alt text](../images/tutorial1_triangle.png "") 
+
+
 see file:///C:/Users/tomo/Desktop/Learning_Processing_-_A_Beginners_Guide_to_Programming_Images_Animation_and_Interaction_--_Daniel_Shiffman.pdf
