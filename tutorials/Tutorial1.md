@@ -74,7 +74,7 @@
 
 # Part 2 - Shapes & Colours
 
-1.	Using the blank graph [here](https://github.com/barcaxi/oop/blob/master/notes/grid.docx) to draw the primitive shapes specified by the code:
+1.	Use the blank graph [here](https://github.com/barcaxi/oop/blob/master/notes/grid.docx) to draw the primitive shapes specified by the code:
 
 	```java
 	line(0, 0, 19, 6);
@@ -107,7 +107,7 @@
 
 	![alt text](../images/tutorial1_squares.png "")
 
-4.	Provide the missing RGB values for the colours needed in the code:
+4.	Provide the missing RGB values for the colours needed in the code [tut01_03_rgb](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_03_rgb):
 
 	![alt text](../images/tutorial1_gridshapesRGB.png "RGB colours")
 
