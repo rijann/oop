@@ -130,7 +130,10 @@ The [``background()``](https://processing.org/reference/background_.html "backgr
 
 # Processing Reference
 
-blah
+The methods we have seen like ```ellipse()```, ```line()```, etc. are all part of Processing's library. 
+But how do we find out about these methods and others?
+The answer is to use the [Processing Reference](https://processing.org/reference/ "Processing Reference"). 
+Ther you can browse all of the available methods by category or alphabetically.
 
 
 # Program Flow
