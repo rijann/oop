@@ -1,7 +1,7 @@
 # Tutorial #1 - Processing Primer
 
 
-# Part 1 - Run Processing
+## Part 1 - Run Processing
 
 1.	Run the *Processing* tool by choosing:
 
@@ -72,7 +72,7 @@
 	
 	```
 
-# Part 2 - Shapes & Colours
+## Part 2 - Shapes & Colours
 
 1.	Use the blank graph [here](https://github.com/barcaxi/oop/blob/master/notes/grid.docx) to draw the primitive shapes specified by the code:
 
@@ -185,7 +185,7 @@
 
 	```
 
-# Part 3 - Processing Reference
+## Part 3 - Processing Reference
 
 1.	Using the [Processing Reference](https://processing.org/reference/ "Processing Reference"), try to draw a triangle in the program [tut01_03_rgb](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_03_rgb) using the ``triangle()`` method.  
 	It should then look like this:
@@ -194,3 +194,7 @@
 
 
 see file:///C:/Users/tomo/Desktop/Learning_Processing_-_A_Beginners_Guide_to_Programming_Images_Animation_and_Interaction_--_Daniel_Shiffman.pdf
+
+
+## Part 4 - Program Flow
+
