@@ -19,6 +19,9 @@
  Processing is really Java 
 
 Processing programs are informally referred to as sketches
+The folder where you store your sketches is called your sketchbook
+
+
 
 ![alt text](../images/processingStartup.png "")
 
@@ -149,14 +152,14 @@ In the programs shown so far the instructions are executed in sequence from the 
 This sequential flow is typical of all programs you wrote in *OOP* last year.
 
 However, in *Problem Solving with Robots* a different way of executing instructions was seen with the Robocode software.  
-The flow is event driven.
+The flow was event driven.
 Instructions were executed when an event occured.  For example, a block of code was executed when the robot scanned another robot, or a block of code was executed when the robot was hit by a bullet.  In later modules you will use this event-driven again for GUI programming.
 
 The Processing environment typically uses 2 blocks of code to control the flow of its programs - the methods ```setup()``` and ```draw()```.
 
-```setup()``` is used to execute instructions at the start of the program only **once**.
+```setup()``` is used to execute certain instructions at the start of the program only **once**.
 
-```draw()``` is used to execute instructions **continuously**.  
+```draw()``` is used to execute certain instructions **continuously**.  
 
 **Why use these methods?**
 
@@ -174,7 +177,7 @@ Then there things you need to do as the program runs:
 -	change variable values
 -	draw new content
 
-For example:
+For example, this program [ellipse_moving](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMoving/ellipseMoving.pde) draws a ellipse moving across the screen:
 
 ```java
 float x; 
@@ -196,6 +199,8 @@ void draw()
   x++;                      // add 1 to x
 }
 ```
+![](../images/ellipseMoving.jpg "Animated Ellipse")
+
 These 2 blocks of code will form the template of all of our programs from now on.
 
 
