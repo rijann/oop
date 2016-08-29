@@ -199,7 +199,7 @@
 
 ## Part 4 - Program Flow
 
-1.	Run the program [ellipse_moving](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMoving/ellipseMoving.pde).
+1.	Run the program [ellipse_moving](https://github.com/barcaxi/oop/tree/master/code/notes/ellipseTracking).
 
 2.	Modify the code so the ellipse moves twice as fast across the screen.
 
@@ -217,3 +217,4 @@
 ## Part 5 - Built-In Variables
 
 1.	Run the program [ellipse_tracking](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMoving/ellipseTracking.pde).
+
