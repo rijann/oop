@@ -15,6 +15,13 @@
 
 
 # What is Processing?
+
+ Processing is really Java 
+
+Processing programs are informally referred to as sketches
+
+![alt text](../images/processingStartup.png "")
+
 .. http://learningprocessing.com/videos/2-0
 
 processing.org website.  
