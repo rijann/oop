@@ -177,7 +177,7 @@ Then there things you need to do as the program runs:
 -	change variable values
 -	draw new content
 
-For example, this program [ellipse_moving](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMoving/ellipseMoving.pde) draws a ellipse that moves across the screen:
+For example, this program [ellipse_moving](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMoving/ellipseMoving.pde) draws an ellipse that moves across the screen:
 
 ```java
 float x; 
@@ -209,7 +209,7 @@ These 2 blocks of code will form the template of all of our programs from now on
 
 Processing has some handy built-in system variables that can be used.
 
-For example [``mouseX``](https://processing.org/reference/mouseX.html "mouseX()") and [``height``](https://processing.org/reference/height.html "height()") variables are used here:
+For example [``mouseX``](https://processing.org/reference/mouseX.html "mouseX()") and [``height``](https://processing.org/reference/height.html "height()") variables are used here in the program [ellipse_tracking](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMoving/ellipseTracking.pde).
 
 ```java
 // runs one time
@@ -227,7 +227,9 @@ void draw()
 
   ellipse(mouseX, height/2, 50, 50);  // draw ellipse using mouse x coordinate
 }
+
 ```
+
 Other built-in variables are [``mouseY``](https://processing.org/reference/mouseY.html "mouseY()") and [``width``](https://processing.org/reference/width.html "width()").  And there are many more to find at the [Processing Reference](https://processing.org/reference/)
 
 
