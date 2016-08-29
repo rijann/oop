@@ -210,7 +210,7 @@
 
 5.	Modify the code so the white ellipse *bounces* off the sides of the canvas continuously.
 
-	![](../images/ellipseBouncing.gif "Bouncing Ellipse")
+	![](../images/ellipseTracking.gif "Bouncing Ellipse")
 
 
 
