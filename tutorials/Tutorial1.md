@@ -208,7 +208,7 @@
 
 4.	Modify the code so a second red coloured ellipse starts at the right hand side and moves from right to left across the canvas.  Comment it out when done.
 
-5.	Modify the code so the white ellipse *bounces* off the sides of the canvas continuously.
+5.	Modify the code so the white ellipse *bounces* off the sides of the canvas continuously like this:
 
 	![](../images/ellipseTracking.gif "Bouncing Ellipse")
 
@@ -216,5 +216,5 @@
 
 ## Part 5 - Built-In Variables
 
-1.	Run the program [ellipse_tracking](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMoving/ellipseTracking.pde).
+1.	Run the program [ellipse_tracking](https://github.com/barcaxi/oop/tree/master/code/notes/ellipseTracking).
 
