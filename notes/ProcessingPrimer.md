@@ -177,7 +177,7 @@ Then there things you need to do as the program runs:
 -	change variable values
 -	draw new content
 
-For example, this program [ellipse_moving](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMoving/ellipseMoving.pde) draws a ellipse moving across the screen:
+For example, this program [ellipse_moving](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMoving/ellipseMoving.pde) draws a ellipse that moves across the screen:
 
 ```java
 float x; 
@@ -185,7 +185,7 @@ float x;
 // setup() runs first one time
 void setup() 
 {  
-  size(640, 360); // Set the size of the window  
+  size(200, 200); // Set the size of the window  
   x=0;            // intialise x coordinated
 }
 
@@ -195,9 +195,10 @@ void draw()
   background(0, 0, 0);
   fill(255, 255, 255); 
 
-  ellipse(x, 180, 50, 50);  // draw ellipse using x
+  ellipse(x, 100, 50, 50);  // draw ellipse using x
   x++;                      // add 1 to x
 }
+
 ```
 ![](../images/ellipseMoving.gif "Animated Ellipse")
 
