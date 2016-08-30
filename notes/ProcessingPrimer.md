@@ -10,6 +10,8 @@
 - [Processing Reference](#processing-reference)
 - [Program Flow](#program-flow)
 - [Processing Built-In Variables](#processing-built-in-variables)
+- [Processing Events](#processing-events)
+- [Processing Built-In Methods](#processing-built-in-methods)
 - [Processing Methods](#processing-methods)
 - [Processing Variables](#processing-variables)
 
