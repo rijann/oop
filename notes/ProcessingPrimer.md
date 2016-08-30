@@ -312,7 +312,8 @@ There follows examples of some more useful built-in Processing methods.
 - [``text()``](https://processing.org/reference/text_.html "text()") & [``textSize()``](https://processing.org/reference/textSize_.html "textSize()")
 
 
-  ``text()`` draws text to the screen at a specified (x,y) location.  
+  ``text()`` draws text to the screen at a specified (x,y) location.
+  
   ``textSize()`` sets the font size.
 
   For example, the program [text_helloworld](https://github.com/barcaxi/oop/blob/master/code/notes/textHelloWorld/) draws "hello world" at the mouse (x,y) coordinates:
@@ -338,6 +339,7 @@ There follows examples of some more useful built-in Processing methods.
 
 
   The ``loadImage()`` method loads an image into a variable of type ``PImage``.
+
   The ``image()`` method draws an image to the display window.
 
   For example, the program [image_earthrise](https://github.com/barcaxi/oop/blob/master/code/notes/imageEarthRise/) loads and draws ``earthrise.jpg``
