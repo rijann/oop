@@ -268,7 +268,7 @@ void keyPressed()
 
 These new methods are executed once each time the corresponding event occurs.
 
-Using the mouse and keyboard allow us to add some nice interaction capabilities to our programs.
+Using the mouse and keyboard will allow us to add some nice interaction capabilities to our programs.
 
 
 # Processing Built-In Methods
@@ -278,6 +278,8 @@ There follows examples of some more useful built-in Processing methods.
 - [``random()``](https://processing.org/reference/random_.html "random()")
 
   Generates a random number within a specified range.
+
+  For example, the program [ellipse_random](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseRandom/) draws ellipses at random (x,y) coordinates:
 
   ```java
   void setup()
@@ -294,11 +296,45 @@ There follows examples of some more useful built-in Processing methods.
   }
 
   ```
-  
-print()
-println()
-text()
-textSize()
+
+- [``print()``](https://processing.org/reference/print_.html "print()") & [``println()``](https://processing.org/reference/println_.html "println()")
+
+
+  These write to the console area, the black rectangle at the bottom of the Processing environment.  Similar to ``System.out.println()`` used to print to console in jGrasp.
+
+  ```java
+  println("hello, world!");  
+  print("hello, ");  
+  println("world!"); 
+
+  ```
+
+- [``text()``](https://processing.org/reference/text_.html "text()") & [``textSize()``](https://processing.org/reference/textSize_.html "textSize()")
+
+
+  ``text()`` draws text to the screen at a specified (x,y) location.  
+  ``textSize()`` sets the font size.
+
+  For example, the program [text_helloworld](https://github.com/barcaxi/oop/blob/master/code/notes/textHelloWorld/) draws "hello world" at the mouse (x,y) coordinates:
+
+  ```java
+  void setup()
+  {
+    size(640, 360);
+  }
+
+  void draw()
+  {
+    background(0, 0, 0);
+    textSize(32);
+    text("hello, word!", mouseX, mouseY);
+  }
+
+  ```
+
+
+
+
 image()
 map()
 
