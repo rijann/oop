@@ -202,6 +202,8 @@ void draw()
 ```
 ![](../images/ellipseMoving.gif "Animated Ellipse")
 
+By incrementing ``x`` we add variation to the x location of our ellipse.
+
 These 2 blocks of code will form the template of all of our programs from now on.
 
 
@@ -230,11 +232,12 @@ void draw()
 
 ```
 
-Other built-in variables are [``mouseY``](https://processing.org/reference/mouseY.html "mouseY()") and [``width``](https://processing.org/reference/width.html "width()").  And there are many more to find at the [Processing Reference](https://processing.org/reference/)
+A few other built-in variables are [``mouseY``](https://processing.org/reference/mouseY.html "mouseY()") and [``width``](https://processing.org/reference/width.html "width()").  And there are many more to find at the [Processing Reference](https://processing.org/reference/)
 
 
 # Processing Built-In Methods
 
+https://www.youtube.com/watch?v=UvSjtiW-RH8
 
 
 # Processing Methods

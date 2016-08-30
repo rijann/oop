@@ -3,6 +3,7 @@ void setup()
 {
   // Set the size of the window
   size(640, 360);
+  //background(0, 0, 0);
 }
 
 // loops continuously 

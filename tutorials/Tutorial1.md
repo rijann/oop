@@ -151,7 +151,7 @@
 
 5.	Design your own *simple* creature using simple shapes and colors. 
 	Draw the creature by hand using only points, lines, rectangles, and ellipses. 
-	Then attempt to write the code for the creature using commands like - ```point()```, 
+	Then in a new program called [tut01_04_creature](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_03_creature) attempt to write the code for the creature using commands like - ```point()```, 
 	```line()```, ```rect( )```, ```ellipse()```, ```stroke()``` , and ```fill( )```. 
 
 	![alt text](../images/zoog.png "")
@@ -218,4 +218,36 @@
 
 1.	Run the program [ellipse_tracking](https://github.com/barcaxi/oop/tree/master/code/notes/ellipseTracking).
 
+2.	Modify the code so the radius of the ellipse uses the current mouse y location.
+	Restore the ellipses width and height to 50 when done.
 
+	Solution:
+
+	```java
+	// runs one time
+	void setup() 
+	{
+	  // Set the size of the window
+	  size(640, 360);
+	}
+
+	// loops continuously 
+	void draw() 
+	{
+	  background(0, 0, 0);
+	  fill(255, 255, 255); 
+
+	  ellipse(mouseX, height/2, mouseY, mouseY);  // draw ellipse using mouse x coordinate
+	}
+
+	```
+
+2.	Modify the code so the ellipse uses both the x and y location of the mouse for its x,y coordinates.
+
+3.	Uncomment the ``background()`` method in ``setup()`` and comment out ``background()`` metthod in ``draw()`` run the code again.	
+	Can you explain why you see a trail of ellipses.  Restore the backgrounds when finished.
+
+4.	Run the program [tut01_04_lineDrawing](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_04_lineDrawing)
+
+5.	Uncomment the ``background()`` method in ``draw()`` and run the code again.	
+	Again understand when this effect is happening.
