@@ -266,11 +266,42 @@ void keyPressed()
 
 ```
 
+These new methods are executed once each time the corresponding event occurs.
 
-https://www.youtube.com/watch?v=UvSjtiW-RH8
+Using the mouse and keyboard allow us to add some nice interaction capabilities to our programs.
 
 
 # Processing Built-In Methods
+
+There follows examples of some more useful built-in Processing methods.
+
+- [``random()``](https://processing.org/reference/random_.html "random()")
+
+  Generates a random number within a specified range.
+
+  ```java
+  void setup()
+  {
+    size(640, 360);
+    background(0, 0, 0);
+  }
+
+  void draw()
+  {
+    float x = random(width);
+    float y= random(height);
+    ellipse(x, y, 50, 50);
+  }
+
+  ```
+  
+print()
+println()
+text()
+textSize()
+image()
+map()
+
 
 
 # Processing Methods
@@ -283,8 +314,11 @@ https://www.youtube.com/watch?v=UvSjtiW-RH8
 [``stroke()``](https://processing.org/reference/stroke_.html "stroke()")
 [``fill()``](https://processing.org/reference/fill_.html "fill()")
 [``background()``](https://processing.org/reference/background_.html "background()")
+[``setup()``](https://processing.org/reference/setup_.html "setup()")
+[``draw()``](https://processing.org/reference/draw_.html "draw()")
 
-[``mousePressed()``](https://processing.org/reference/mousePressed_.html)
+[``mousePressed()``](https://processing.org/reference/mousePressed_.html "mousePressed()")
+[``keyPressed()``](https://processing.org/reference/keyPressed_.html "keyPressed()")
 
 # Processing Variables
 
