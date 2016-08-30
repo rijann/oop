@@ -247,7 +247,17 @@
 3.	Uncomment the ``background()`` method in ``setup()`` and comment out ``background()`` method in ``draw()`` run the code again.	
 	Can you explain why you see a trail of ellipses.  Restore the backgrounds when finished.
 
-4.	Run the program [tut01_04_lineDrawing](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_04_lineDrawing)
-
-5.	Uncomment the ``background()`` method in ``draw()`` and run the code again.	
+4.	Run the program [tut01_04_lineDrawing](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_04_lineDrawing). Uncomment the ``background()`` method in ``draw()`` and run the code again.	
 	Again understand when this effect is happening.
+
+
+## Part 6 - Processing Events
+
+1.	Run the program [ellipse_mouse](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMouse/)
+
+	Modify the code in ``keyPressed()`` so when the key 'r' is pressed the an ellipse colour of red will be used next time an ellipse is drawn.  Hint: Use the [``fill()``](https://processing.org/reference/fill_.html "fill()") method.
+
+2.	Modify the code to also use the 'g' and 'b' keys for green and blue.
+
+
+
