@@ -239,7 +239,7 @@ A few other built-in variables are [``mouseY``](https://processing.org/reference
 
 # Processing Events
 
-We already talked about events and the flow of a typical Processing program in the [Program Flow](#program-flow) section.  Two useful interaction events that can occur are mouse events and key events.  For example, let's say we want to do something when a mouse click event happens.  There is a built-in method called [``mousePressed()``](https://processing.org/reference/mousePressed_.html) which is used in the program [ellipse_mouse](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMouse/) below:
+We already talked about events and the flow of a typical Processing program in the [Program Flow](#program-flow) section.  Two useful interaction events that can occur are mouse events and key events.  For example, let's say we want to do something when a mouse click event happens or a key is pressed.  There are built-in methods called [``mousePressed()``](https://processing.org/reference/mousePressed_.html) and [``keyPressed()``](https://processing.org/reference/keyPressed_.html) which is used in the program [ellipse_mouse](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMouse/) below:
 
 ```java
 void setup()
@@ -260,7 +260,8 @@ void mousePressed()
 
 void keyPressed()
 {
-  background(0, 0, 0);  // clear
+  if(key==' ')
+    background(0, 0, 0);  // clear if spacebar pressed
 }
 
 ```
