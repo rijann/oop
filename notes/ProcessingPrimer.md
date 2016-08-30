@@ -111,7 +111,7 @@ The *stroke* specifes the color for the outline of the shape, and the *fill* spe
 
 Digital colours are constructed by mixing three primary colours -  red, green, and blue (i.e. *RGB* colour).  RGB colours are expressed as ranges from 0 (none of that colour) to 255 (as much as possible).  RGB colours are listed in the order red, green, and blue. You will get the hang of RGB color mixing through experimentation.
 
-Here is a handy [Colour Picker](http://www.w3schools.com/colors/colors_picker.asp "W3 Colour Picker") or use the **Color Selector** from the ``Tools`` menu.
+Here is a handy [Colour Picker](http://www.w3schools.com/colors/colors_picker.asp "W3 Colour Picker") or use the *Color Selector* from the ``Tools`` menu.
 
 By adding the [``stroke()``](https://processing.org/reference/stroke_.html "stroke()") and [``fill()``](https://processing.org/reference/fill_.html "fill()") methods before the shape is drawn, you can set the color.
 
