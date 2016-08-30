@@ -16,5 +16,6 @@ void mousePressed()
 
 void keyPressed()
 {
-  background(0, 0, 0);  // clear
+  if(key==' ')
+    background(0, 0, 0);  // clear if spacebar pressed
 }
