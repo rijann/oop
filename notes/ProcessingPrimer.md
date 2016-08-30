@@ -334,8 +334,32 @@ There follows examples of some more useful built-in Processing methods.
 
 
 
+- [``loadImage()``](https://processing.org/reference/loadImage_.html "loadImage()") & [``image()``](https://processing.org/reference/image_.html "image()")
 
-image()
+
+  The ``loadImage()`` method loads an image into a variable of type ``PImage``.
+  The ``image()`` method draws an image to the display window.
+
+  For example, the program [image_earthrise](https://github.com/barcaxi/oop/blob/master/code/notes/imageEarthRise/) loads and draws ``earthrise.jpg``
+
+  ```java
+  PImage img;
+
+  void setup() {
+    size(300, 300);
+    
+    img = loadImage("./earthrise.jpg");  // image in same directory to program
+  }
+
+  void draw() {
+    image(img, 0, 0);
+  }
+
+  ```
+
+
+
+
 map()
 
 
