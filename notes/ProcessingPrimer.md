@@ -313,7 +313,7 @@ There follows examples of some more useful built-in Processing methods.
 
 
   ``text()`` draws text to the screen at a specified (x,y) location.
-  
+
   ``textSize()`` sets the font size.
 
   For example, the program [text_helloworld](https://github.com/barcaxi/oop/blob/master/code/notes/textHelloWorld/) draws "hello world" at the mouse (x,y) coordinates:
@@ -359,10 +359,8 @@ There follows examples of some more useful built-in Processing methods.
 
   ```
 
+- [``map()``](https://processing.org/reference/map_.html "map()")
 
-
-
-map()
 
 
 
@@ -378,9 +376,17 @@ map()
 [``background()``](https://processing.org/reference/background_.html "background()")
 [``setup()``](https://processing.org/reference/setup_.html "setup()")
 [``draw()``](https://processing.org/reference/draw_.html "draw()")
-
 [``mousePressed()``](https://processing.org/reference/mousePressed_.html "mousePressed()")
 [``keyPressed()``](https://processing.org/reference/keyPressed_.html "keyPressed()")
+[``random()``](https://processing.org/reference/random_.html "random()")
+[``print()``](https://processing.org/reference/print_.html "print()") 
+[``println()``](https://processing.org/reference/println_.html "println()")
+[``text()``](https://processing.org/reference/text_.html "text()") 
+[``textSize()``](https://processing.org/reference/textSize_.html "textSize()")
+[``loadImage()``](https://processing.org/reference/loadImage_.html "loadImage()") 
+[``image()``](https://processing.org/reference/image_.html "image()")
+[``map()``](https://processing.org/reference/map_.html "map()")
+
 
 # Processing Variables
 
