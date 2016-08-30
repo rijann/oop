@@ -244,7 +244,7 @@
 
 2.	Modify the code so the ellipse uses both the x and y location of the mouse for its x,y coordinates.
 
-3.	Uncomment the ``background()`` method in ``setup()`` and comment out ``background()`` metthod in ``draw()`` run the code again.	
+3.	Uncomment the ``background()`` method in ``setup()`` and comment out ``background()`` method in ``draw()`` run the code again.	
 	Can you explain why you see a trail of ellipses.  Restore the backgrounds when finished.
 
 4.	Run the program [tut01_04_lineDrawing](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_04_lineDrawing)
