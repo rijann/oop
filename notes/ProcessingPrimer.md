@@ -235,9 +235,21 @@ void draw()
 A few other built-in variables are [``mouseY``](https://processing.org/reference/mouseY.html "mouseY()") and [``width``](https://processing.org/reference/width.html "width()").  And there are many more to find at the [Processing Reference](https://processing.org/reference/)
 
 
-# Processing Built-In Methods
+
+
+# Processing Events
+
+We already talked about events and the flow of a typical Processing program in the [Program Flow](#program-flow) section.  Two useful interaction events that can occur are mouse events and key events.  For example, let's say we want to do something when a mouse click event happens.  There is a built-in method called [``mousePressed()``](https://processing.org/reference/mousePressed_.html) which is used in the program ??? below:
+
+```java
+
+```
+
 
 https://www.youtube.com/watch?v=UvSjtiW-RH8
+
+
+# Processing Built-In Methods
 
 
 # Processing Methods
@@ -251,6 +263,7 @@ https://www.youtube.com/watch?v=UvSjtiW-RH8
 [``fill()``](https://processing.org/reference/fill_.html "fill()")
 [``background()``](https://processing.org/reference/background_.html "background()")
 
+[``mousePressed()``](https://processing.org/reference/mousePressed_.html)
 
 # Processing Variables
 
