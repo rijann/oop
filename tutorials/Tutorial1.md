@@ -268,4 +268,13 @@
 2.	Modify the code to also use the 'g' and 'b' keys for green and blue.
 
 
+# Part 7 - Processing Built-In Methods
+
+1.	Modify the program [ellipse_random](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseRandom/) so the colours of the ellipses have random RGB values.
+
+2.	Modify the program so the ellipses are drawn at the mouse x and y location.  You should achieve the effect shown below:
+
+	![](../images/ellipseRandom.png "random coloured ellipses")
+
+
 
