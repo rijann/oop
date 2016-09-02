@@ -268,7 +268,9 @@
 2.	Modify the code to also use the 'g' and 'b' keys for green and blue.
 
 
-# Part 7 - Processing Built-In Methods
+## Part 7 - Processing Built-In Methods
+
+**Random**
 
 1.	Modify the program [ellipse_random](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseRandom/) so the colours of the ellipses have random RGB values.
 
@@ -277,4 +279,15 @@
 	![](../images/ellipseRandom.png "random coloured ellipses")
 
 
+3.	Try to use ``random()`` to draw random sized ellipses.
+
+**Text**
+
+1.	Write a program ``tut01_text`` that writes "hello" on the canvas at each location where the mouse is pressed.  Use a text size of 15.
+
+2.	Modify the code so instead of "hello" the (x,y) mouse coordinates are printed as shown in this example:
+
+	![](../images/tutorial1_text.png "text")
+
+3.	Modify the code so the mouse coordinates are printed in Processing console window at the bottom of the Processing environment.
 
