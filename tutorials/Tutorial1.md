@@ -214,6 +214,10 @@
 
 	![](../images/ellipseTracking.gif "Bouncing Ellipse")
 
+6.	Modify your creature so it moves across the screen once like zoog below:
+
+	![](../images/zoogMoving.gif "zoog moving")
+
 
 
 ## Part 5 - Built-In Variables
