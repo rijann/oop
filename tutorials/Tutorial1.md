@@ -263,7 +263,7 @@
 
 1.	Run the program [ellipse_mouse](https://github.com/barcaxi/oop/blob/master/code/notes/ellipseMouse/)
 
-	Modify the code in ``keyPressed()`` so when the key 'r' is pressed the colour *r*ed will be used next time an ellipse is drawn.  Hint: Use the [``fill()``](https://processing.org/reference/fill_.html "fill()") method.
+	Modify the code in ``keyPressed()`` so when the key 'r' is pressed the colour **r**ed will be used next time an ellipse is drawn.  Hint: Use the [``fill()``](https://processing.org/reference/fill_.html "fill()") method.
 
 2.	Modify the code to also use the 'g' and 'b' keys for green and blue.
 
