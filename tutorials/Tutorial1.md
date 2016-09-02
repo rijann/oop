@@ -151,12 +151,14 @@
 
 5.	Design your own *simple* creature using simple shapes and colors. 
 	Draw the creature by hand using only points, lines, rectangles, and ellipses. 
-	Then in a new program called [tut01_04_creature](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_03_creature) attempt to write the code for the creature using commands like - ```point()```, 
-	```line()```, ```rect( )```, ```ellipse()```, ```stroke()``` , and ```fill( )```. 
+	Then using the template program [tut01_creature](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_creature) write the code for the creature using commands like - ```point()```, 
+	```line()```, ```rect( )```, ```ellipse()```, ```stroke()``` , and ```fill()```. 
+
+	This is zoog!
 
 	![alt text](../images/zoog.png "")
 
-	You will get to use this creature in later exercises.
+	You will get to use your creature in later exercises.
 
 	ANSWER:
 
