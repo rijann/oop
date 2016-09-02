@@ -291,3 +291,13 @@
 
 3.	Modify the code so the mouse coordinates are printed in Processing console window at the bottom of the Processing environment.
 
+**Images**
+
+1.	Run the program [image_earthrise](https://github.com/barcaxi/oop/blob/master/code/notes/imageEarthRise/).
+
+2.	Modify the code so your creature is drawn on the image at the current mouse position:
+
+	![](../images/earthriseCreature.png "Creature on the Moon")
+
+3.	Try to load a different image as the background to your program.  Remember the image must be saved in the same folder as your code.
+
