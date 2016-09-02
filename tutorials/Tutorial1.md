@@ -214,7 +214,7 @@
 
 	![](../images/ellipseTracking.gif "Bouncing Ellipse")
 
-6.	Modify your creature so it moves across the screen once like zoog below:
+6.	Modify your creature so it moves across the canvas once like zoog below:
 
 	![](../images/zoogMoving.gif "zoog moving")
 
@@ -255,6 +255,8 @@
 
 4.	Run the program [tut01_04_lineDrawing](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_04_lineDrawing). Uncomment the ``background()`` method in ``draw()`` and run the code again.	
 	Again understand when this effect is happening.
+
+5.	Create a new program ``creature_tracking`` that uses both the x and y location of the mouse for the x,y coordinates of your creature.
 
 
 ## Part 6 - Processing Events
