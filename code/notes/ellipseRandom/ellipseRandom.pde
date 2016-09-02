@@ -8,5 +8,7 @@ void draw()
 {
   float x = random(width);
   float y= random(height);
+  
+  fill(255, 255, 255);
   ellipse(x, y, 50, 50);
 }
