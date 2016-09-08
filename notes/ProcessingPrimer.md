@@ -33,7 +33,12 @@ Processing's "Hello, World!"" might look something like this:
 
 Processing is free.  You can download it at [https://processing.org](https://processing.org/)
 
+Processing is a alternative programming editor/tool to *Eclipse*.
+
 **Processing is Java!!**  Processing uses Java's programming language principles, structures, and concepts. Everything you learn with Processing is real programming. It is not some pretend language to help you get started; it has all the fundamentals and core concepts of Java.
+
+The focus of this module (and all your programming modules) is primarily on learning the fundamentals of computer programming. Processing is great both for learning and for producing nice projects, there are very few environments you can say that about.  I believe Processing is the tool that you should use on that journey.
+
 
 
 
