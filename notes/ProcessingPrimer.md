@@ -31,9 +31,9 @@ Processing's "Hello, World!"" might look something like this:
 
 ![alt text](../images/smiley.png "hello world")
 
-Processing is free.  You can download it at [[https://processing.org](https://processing.org/)]
+Processing is free.  You can download it at [https://processing.org](https://processing.org/)
 
-Processing is Java!!  Processing uses Java's programming language principles, structures, and concepts. Everything you learn with Processing is real programming. It is not some pretend language to help you get started; it has all the fundamentals and core concepts of Java.
+**Processing is Java!!**  Processing uses Java's programming language principles, structures, and concepts. Everything you learn with Processing is real programming. It is not some pretend language to help you get started; it has all the fundamentals and core concepts of Java.
 
 
 
