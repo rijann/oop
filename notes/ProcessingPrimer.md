@@ -18,9 +18,7 @@
 
 # What is Processing?
 
-> Processing is a flexible software sketchbook for learning how to code within the context of the visual arts.  Since 2001, Processing has promoted software literacy within the visual arts. There are tens of thousands of students, artists, designers, researchers, and hobbyists who use Processing for learning and prototyping.
-
-[processing.org Variables](https://processing.org/)
+> Processing is a flexible software sketchbook for learning how to code within the context of the visual arts.  Since 2001, Processing has promoted software literacy within the visual arts. There are tens of thousands of students, artists, designers, researchers, and hobbyists who use Processing for learning and prototyping. [[processing.org](https://processing.org/)]
 
 
 The strength of learning with Processing is its emphasis on a more intuitive and visually responsive environment, one that is more conducive to artists and designers learning programming.
