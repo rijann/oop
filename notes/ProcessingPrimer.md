@@ -18,6 +18,9 @@
 
 # What is Processing?
 
+> Processing is a flexible software sketchbook for learning how to code within the context of the visual arts.  Since 2001, Processing has promoted software literacy within the visual arts. There are tens of thousands of students, artists, designers, researchers, and hobbyists who use Processing for learning and prototyping.
+[processing.org Variables](https://processing.org/)
+
  Processing is really Java 
 
 Processing programs are informally referred to as sketches
@@ -294,9 +297,11 @@ There follows examples of some more useful built-in Processing methods.
   {
     float x = random(width);
     float y= random(height);
+    
+    fill(255, 255, 255);
     ellipse(x, y, 50, 50);
   }
-
+  
   ```
 
 - [``print()``](https://processing.org/reference/print_.html "print()") & [``println()``](https://processing.org/reference/println_.html "println()")
