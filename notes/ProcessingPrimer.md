@@ -18,7 +18,7 @@
 
 # What is Processing?
 
-> Processing is a flexible software sketchbook for learning how to code within the context of the visual arts.  Since 2001, Processing has promoted software literacy within the visual arts. There are tens of thousands of students, artists, designers, researchers, and hobbyists who use Processing for learning and prototyping. [[processing.org](https://processing.org/)]
+> Processing is a flexible software program created to teach fundamentals of computer programming within a visual context.  Since 2001, Processing has promoted software literacy within the visual arts. There are tens of thousands of students, artists, designers, researchers, and hobbyists who use Processing for learning. [[processing.org](https://processing.org/)]
 
 
 The strength of learning with Processing is its emphasis on a more intuitive and visually responsive environment, one that is more conducive to artists and designers learning programming.
@@ -31,7 +31,14 @@ Processing's "Hello, World!"" might look something like this:
 
 ![alt text](../images/smiley.png "hello world")
 
- Processing is really Java 
+Processing is free.  You can download it at [[https://processing.org](https://processing.org/)]
+
+Processing is Java!!  Processing uses Java's programming language principles, structures, and concepts. Everything you learn with Processing is real programming. It is not some pretend language to help you get started; it has all the fundamentals and core concepts of Java.
+
+
+
+
+Processing is built on top of the Java programming language and 
 
 Processing programs are informally referred to as sketches
 The folder where you store your sketches is called your sketchbook
