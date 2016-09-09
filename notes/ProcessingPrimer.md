@@ -21,7 +21,7 @@
 
 > Processing is a flexible software program created to teach fundamentals of computer programming within a visual context.  Since 2001, Processing has promoted software literacy within the visual arts. There are tens of thousands of students, artists, designers, researchers, and hobbyists who use Processing for learning. [[processing.org](https://processing.org/)]
 
-The strength of learning with Processing is its emphasis on a more intuitive and visually responsive environment, one that is more conducive to artists and designers learning programming.
+The strength of using Processing is its emphasis on learning the fundamentals of computer programming in a visual context.
 
 1.  You write your code as text.
 2.  Your code produces visuals in a window.
@@ -37,7 +37,7 @@ Processing is a alternative programming editor/tool to *Eclipse*.
 
 **Processing is Java!!**  Processing uses Java's programming language principles, structures, and concepts. Everything you learn with Processing is real programming. It is not some pretend language to help you get started; it has all the fundamentals and core concepts of Java.
 
-The focus of this module (and all your programming modules) is primarily on learning the fundamentals of computer programming. Processing is great both for learning and for producing nice projects. There are very few environments you can say that about.  I believe Processing is the tool that we should use on that journey.
+The focus of this module (and all your programming modules) is primarily on learning the fundamentals of computer programming. Processing is great both for learning and for producing nice projects. There are very few environments you can say that about.  Processing is the tool that we will use on our journey in this module.
 
 
 # Processing Development Environment
@@ -49,6 +49,7 @@ The Processing Development Environment (PDE), shown below, consists of a simple 
 The toolbar buttons allow you to run and stop programs. When you run a program a new display window is opened that displays the output of the program.
 
 Processing programs are informally referred to as *sketches*. The folder where you store your sketches is called your *sketchbook*.
+
 
 
 # Coordinate System
