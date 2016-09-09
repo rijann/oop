@@ -3,8 +3,13 @@
 A repository for OOP3 module.
 
 
-# Contents
+# Notes
 - [Processing Primer](./notes/ProcessingPrimer.md)
 - [Arrays & Arraylists](./notes/ArraysAndArraylists.md)
+
+
+# Tutorials
 - [Practical 1](./exercises/ArraysAndArraylists.md)
 
+
+# Assignments
