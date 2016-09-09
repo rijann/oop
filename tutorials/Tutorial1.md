@@ -27,8 +27,9 @@
 	Choose any of the other example programs and run them too.
 
 
+3.	Create a new folder on your X drive or external hard drive called ``oop3`` to store all your code for this module.  You should save all your programs there.  You can also change the default sketchbook location using  ``File > Preferences...`` to your new folder.
 
-3.	Create a new sketch (aka program) called [tut01_01_shapes](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_01_shapes) using the code below and run it:
+4.	In your ``oop3`` folder create a new sketch (program) called [tut01_01_shapes](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_01_shapes) using the code below and run it:
 
 	```java	
 	size(300, 200);
@@ -49,7 +50,7 @@
 
 	```
 
-4.	The program above works because there are no errors in it.
+5.	The program above works because there are no errors in it.
 	The program [tut01_02_errors](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_02_errors) below has errors.  
 	Carefully examine the error messages shown and fix them.
 
