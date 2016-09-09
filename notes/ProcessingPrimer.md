@@ -4,6 +4,7 @@
 # Contents
 
 - [What is Processing?](#what-is-processing)
+- [Processing Development Environment](#processing-development-environment)
 - [Coordinate System](#coordinate-system)
 - [Shapes](#shapes)
 - [Stroke, Fill & Colour](#stroke-fill-colour)
@@ -19,7 +20,6 @@
 # What is Processing?
 
 > Processing is a flexible software program created to teach fundamentals of computer programming within a visual context.  Since 2001, Processing has promoted software literacy within the visual arts. There are tens of thousands of students, artists, designers, researchers, and hobbyists who use Processing for learning. [[processing.org](https://processing.org/)]
-
 
 The strength of learning with Processing is its emphasis on a more intuitive and visually responsive environment, one that is more conducive to artists and designers learning programming.
 
@@ -37,46 +37,18 @@ Processing is a alternative programming editor/tool to *Eclipse*.
 
 **Processing is Java!!**  Processing uses Java's programming language principles, structures, and concepts. Everything you learn with Processing is real programming. It is not some pretend language to help you get started; it has all the fundamentals and core concepts of Java.
 
-The focus of this module (and all your programming modules) is primarily on learning the fundamentals of computer programming. Processing is great both for learning and for producing nice projects, there are very few environments you can say that about.  I believe Processing is the tool that you should use on that journey.
+The focus of this module (and all your programming modules) is primarily on learning the fundamentals of computer programming. Processing is great both for learning and for producing nice projects. There are very few environments you can say that about.  I believe Processing is the tool that we should use on that journey.
 
 
+# Processing Development Environment
 
-
-
-Processing is built on top of the Java programming language and 
-
-Processing programs are informally referred to as sketches
-The folder where you store your sketches is called your sketchbook
-
-
+The Processing Development Environment (PDE), shown below, consists of a simple text editor for typing code, a message window for console output, menus, etc.  
 
 ![alt text](../images/processingStartup.png "")
 
-.. http://learningprocessing.com/videos/2-0
+The toolbar buttons allow you to run and stop programs. When you run a program a new display window is opened that displays the output of the program.
 
-processing.org website.  
-Can download it
-
-<show first screen>
-
-It is a Java programming environment/tool
-	with the purpose of teaching the fundamentals of computer programming in a visual context
-	
-it has a set of added methods that allows us to easily draw to the screen
-it has examples and a community
-Anatomy of buttons at top
-Run = compile and execute your code
-
-use this code:
-```java
-size(300,200);
-line(0,0,300,200);
-```
-and show output and code in a image
-
-Processing website has a Reference which has a list of all the processing methods
-For example here is reference for the line() or rect() method
-
+Processing programs are informally referred to as *sketches*. The folder where you store your sketches is called your *sketchbook*.
 
 
 # Coordinate System
