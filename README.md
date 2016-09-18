@@ -16,7 +16,7 @@ A repository for module *Object Orient Programming* Semester 3.
 - Exceptions
 
 ## Lectures
-- [Processing](https://media.heanet.ie/secure/?p=1&s=a)
+- Processing
 
 
 
