@@ -15,6 +15,10 @@ A repository for module *Object Orient Programming* Semester 3.
 - Sorting & Searching
 - Exceptions
 
+## Lectures
+- [Processing](https://media.heanet.ie/secure/?p=1&s=a)
+
+
 
 ## Tutorials
 - [Practical 1](./tutorials/Tutorial1.md)
