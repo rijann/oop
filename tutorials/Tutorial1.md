@@ -90,19 +90,6 @@
 
 	![alt text](../images/tutorial1_gridshapes.png "")
 
-	Answer:
-
-	```java
-	size(200,200);
-
-	rect(10,10,180,180);
-	ellipse(100,100,180,180);
-	line(10,10,190,190);
-
-	for(int i=10;i<190;i=i+5)
-	  point(i,100);
-	 
-	```
 
 3.	Give the instructions to draw the following output
 
@@ -131,24 +118,6 @@
 	```
 	You can use a this [Colour Picker](http://www.w3schools.com/colors/colors_picker.asp "Colour Picker") 
 
-	ANSWER:
-
-	```java
-	size(200, 200);
-
-	fill(255, 0, 0);            // red 
-	rect(10, 10, 180, 180);  
-	fill(0, 255, 0);            // green
-	ellipse(100, 100, 180, 180);
-
-	stroke(255, 255, 0);   // yellow line
-	line(10, 10, 190, 190); 
-
-	stroke(255, 0, 255);   // purple points
-	for (int i=10; i<190; i=i+5)
-	  point(i, 100);
-
-	```
 
 5.	Design your own *simple* creature using simple shapes and colors. 
 	Draw the creature by hand using only points, lines, rectangles, and ellipses. 
@@ -161,32 +130,6 @@
 
 	You will get to use your creature in later exercises.
 
-	ANSWER:
-
-	```java
-	size(500, 400);
-
-	// body
-	fill(150, 150, 150);
-	rectMode(CENTER); 
-	rect(240, 145, 20, 100);
-
-	// head
-	fill(255, 255, 255);
-	ellipse(240, 115, 60, 60); 
-
-	// eyes
-	fill(0, 0, 0); 
-	ellipse(221, 115, 16, 32); 
-	ellipse(259, 115, 16, 32);
-
-	// legs
-	line(230, 195, 220, 205);
-	line(250, 195, 260, 205);  
-
-	println("My name is zoog");
-
-	```
 
 ## Part 3 - Processing Reference
 
@@ -202,7 +145,7 @@
 
 ## Part 4 - Program Flow
 
-1.	Run the program [ellipse_moving](https://github.com/barcaxi/oop/tree/master/code/notes/ellipseTracking).
+1.	Run the program [ellipse_moving](https://github.com/barcaxi/oop/tree/master/code/notes/ellipseMoving).
 
 2.	Modify the code so the ellipse moves twice as fast across the screen.
 
@@ -228,36 +171,15 @@
 2.	Modify the code so the radius of the ellipse uses the current mouse y location.
 	Restore the ellipses width and height to 50 when done.
 
-	Solution:
+3.	Modify the code so the ellipse uses both the x and y location of the mouse for its x,y coordinates.
 
-	```java
-	// runs one time
-	void setup() 
-	{
-	  // Set the size of the window
-	  size(640, 360);
-	}
-
-	// loops continuously 
-	void draw() 
-	{
-	  background(0, 0, 0);
-	  fill(255, 255, 255); 
-
-	  ellipse(mouseX, height/2, mouseY, mouseY);  // draw ellipse using mouse x coordinate
-	}
-
-	```
-
-2.	Modify the code so the ellipse uses both the x and y location of the mouse for its x,y coordinates.
-
-3.	Uncomment the ``background()`` method in ``setup()`` and comment out ``background()`` method in ``draw()`` run the code again.	
+4.	Uncomment the ``background()`` method in ``setup()`` and comment out ``background()`` method in ``draw()`` run the code again.	
 	Can you explain why you see a trail of ellipses.  Restore the backgrounds when finished.
 
-4.	Run the program [tut01_04_lineDrawing](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_04_lineDrawing). Uncomment the ``background()`` method in ``draw()`` and run the code again.	
+5.	Run the program [tut01_04_lineDrawing](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut01_04_lineDrawing). Uncomment the ``background()`` method in ``draw()`` and run the code again.	
 	Again understand when this effect is happening.
 
-5.	Create a new program ``tut01_creature_tracking`` that uses both the x and y location of the mouse for the x,y coordinates of your creature.
+6.	Create a new program ``tut01_creature_tracking`` that uses both the x and y location of the mouse for the x,y coordinates of your creature.
 
 
 ## Part 6 - Processing Events
