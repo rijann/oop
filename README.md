@@ -21,7 +21,7 @@ A repository for module *Object Orient Programming* Semester 3.
 
 
 ## Tutorials
-- [Practical 1](./tutorials/Tutorial1.md)
+- [Tutorial 1](./tutorials/Tutorial1.md)
 
 
 ## Assessment
