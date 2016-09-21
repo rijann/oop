@@ -48,7 +48,7 @@ Remember, before we can use any variable/object we must declare it (e.g. you can
 To store the marks of  200 students, you can declare an array, marks, of size 200 and can store the marks of as many students: 
 
 ```java
-	int marks[] = new int[200];
+	int[] marks = new int[200];
 ```
 
 As you already know, array index element number always starts with 0(zero).
