@@ -116,6 +116,21 @@ These programs are the same as Part 1 but this time use an ``ArrayList`` for sto
 	    diameter=random(50);  // random diameter
 	  }
 
+	  public float getX()
+	  {
+	    return x;
+	  }
+	  
+	  public float getY()
+	  {
+	    return y;
+	  }
+
+	  public float getDiameter()
+	  {
+	    return diameter;
+	  }
+
 	  public void display()
 	  {
 	    fill(125, 50);
@@ -149,7 +164,7 @@ These programs are the same as Part 1 but this time use an ``ArrayList`` for sto
 
 	![alt text](../images/tut02_09.png "Bubbles")
 
-3.	Now, use another loop at the end of the ``setup()`` methods to figure out the largest bubble diameter in the list. Once you have determined the diameter of the largest bubble, you should print it.  For example:
+3.	Now, use another loop at the end of the ``setup()`` method to figure out the largest bubble diameter in the list. Once you have determined the diameter of the largest bubble, you should print it.  For example:
 
 	``largest diameter = 47.99947``	
 
