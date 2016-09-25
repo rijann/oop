@@ -145,9 +145,13 @@ These programs are the same as Part 1 but this time use an ``ArrayList`` for sto
 	-	in ``draw()`` use a background colour ``RGB(185,223,234)``
 	-	in ``draw()`` move and display all the bubbles
 
-	When run you should see bubble floating up the window like this:
+	When run you should see bubbles floating up the window like this:
 
 	![alt text](../images/tut02_09.png "Bubbles")
+
+3.	Now, use another loop at the end of the ``setup()`` methods to figure out the largest bubble diameter in the list. Once you have determined the diameter of the largest bubble, you should print it.  For example:
+
+	``largest diameter = 47.99947``	
 
 
 ## Part 4 - toString()
