@@ -142,7 +142,7 @@ These programs are the same as Part 1 but this time use an ``ArrayList`` for sto
 	-	declare an arraylist called ``bubbles``
 	-	in ``setup()`` create an arraylist called ``bubbles``
 	-	in ``setup()`` add 3 bubble objects to the arraylist
-	-	in ``draw()`` use a background colour RGB(185,223,234)
+	-	in ``draw()`` use a background colour ``RGB(185,223,234)``
 	-	in ``draw()`` move and display all the bubbles
 
 	When run you should see bubble floating up the window like this:
@@ -174,17 +174,7 @@ These programs are the same as Part 1 but this time use an ``ArrayList`` for sto
 
 ## Part 5 - Chroma key
 
-Chroma key (or green-screen) is a technique for compositing (layering) two images or video streams together.
-In this section you will cobine two images together. One is the *foreground image*, of a
-person in front of a green background; the second is the replacement *background
-image*. 
-
-You must iterate through the pixels of the foreground image, replacing each green screen pixel with the corresponding pixel from the background image. The new pixels are saved into a third image, which is saved as a new file.
-
-1.	Open the program [tut02_10](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut02_10).
-	Make sure you also place both images into this program folder.  Run the program.
-
-2.	
+Goto next part.
 
 
 ## Part 6 - Cards Array & ArrayList
@@ -199,13 +189,13 @@ Make sure you have the subfolder ``images`` in the same folder as your program.
 	Take time to read and understand the code.
 
 
-2.	Change the value of the constant variable MAX_CARD_VALUE to 10 and run the program a few times to confirm duplicate cards can be dealt.
+2.	Change the value of the constant variable ``MAX_CARD_VALUE`` to 10 and run the program a few times to confirm duplicate cards can be dealt.
 
 3.	Try to prevent the code from displaying duplicate cards.
 
 
 Below is a more object-oriented way to tackle the idea of handling cards. 
-We create a class ``Cards`` to store and handle the cards, and we can then create an object of that class wherever we wish.
+We have a class ``Cards`` to store and handle the cards, and we can then create an object of that class wherever we wish.
 
 4.	Open the program [tut02_12](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut02_12).
 	Again, make sure you also copy the ``images`` folder into this program folder.  Run the program.
@@ -216,6 +206,6 @@ We create a class ``Cards`` to store and handle the cards, and we can then creat
 
 5.	Modify the code to use an ``ArrayList`` not an array to store the cards. 
 
-6.	Again, yry to prevent the code from displaying duplicate cards.
+6.	Again, try to prevent the code from displaying duplicate cards.
 
 
