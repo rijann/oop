@@ -3,7 +3,11 @@
 ## Part 0 - Classes & Objects
 
 1.	Run the program [tut02_00](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut02_00).
-	It shows how a simple class is declared, created and used.  Make sure you understand this code.
+	It shows how a simple class is declared, created and used.  
+
+	Make sure you have both program files in the same folder.
+
+	Take time to understand this code.
 
 2.	Modify the code to use the ``Spot`` class constructor:
 
