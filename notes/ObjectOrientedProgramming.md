@@ -2,9 +2,9 @@
 
 ## Introduction
 
-Java is an object-oriented programming language and to understand Java you have to understand the concepts of OOP.  Fortunately, OOP is based upon some simple ideas.
+Java is an object-oriented programming language and to understand Java you have to understand the concepts of Object-Oriented Programming.  Fortunately, OOP is based upon some simple ideas.
 
-OOP is based upon a small number of common-sense fundamentals.  Unfortunately, OOP has some special terminology, and it is difficult to understand any part without first understanding most of the others parts.  But, most programmers can understand it when it is explained clearly to them.
+Object-Oriented Programming is based upon a small number of common-sense fundamentals.  Unfortunately, OOP has some special terminology, and it is difficult to understand any part without first understanding most of the others parts.  But, most programmers can understand it when it is explained clearly to them.
 
 Here, OOP is described in simple English, and related to other familiar programming features.
 
