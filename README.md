@@ -6,7 +6,7 @@ A repository for module *Object Orient Programming* Semester 3.
 ## Notes
 - [Processing Primer](./notes/ProcessingPrimer.md)
 - [Arrays & Arraylists](./notes/ArraysAndArraylists.md)
-- Encapsulation & Abstraction
+- [Abstraction & Encapsulation](./notes/ObjectOrientedProgramming.md)
 - Composition
 - Inheritance
 - Polymorphism
