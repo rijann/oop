@@ -104,7 +104,7 @@ void division(int totalSum, int totalNumber)
     int average = totalSum/totalNumber;
     println("Average : "+ average);
   }
-  catch(Exception e)
+  catch(ArithmeticException e)
   {
     System.out.println("Exception : "+ e.getMessage());
   }  
