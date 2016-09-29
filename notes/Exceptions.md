@@ -106,7 +106,7 @@ void division(int totalSum, int totalNumber)
   }
   catch(ArithmeticException e)
   {
-    System.out.println("Exception : "+ e.getMessage());
+    println("Exception : "+ e.getMessage());
   }  
 }
 
