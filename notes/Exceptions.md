@@ -172,7 +172,6 @@ void draw()
 
 
 ```
-
 It will print:
 
 ``
@@ -184,7 +183,7 @@ It will print:
 46
 6: no such array index position
 
-``
+```
 
 This is an introduction. It is enough to get us started with the concept of exception handling. 
 
