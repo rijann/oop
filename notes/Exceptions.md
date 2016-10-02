@@ -5,6 +5,8 @@
 - [Purpose of Exceptions](#purpose-of-exceptions)
 - [Exception Handling](#exception-handling)
 - [Another Example](#another-example)
+- [Exception Propagation](#exception-propagation)
+- [Throwing Exceptions](#throwing-exceptions)
 
 ## Purpose of Exceptions
 
@@ -213,7 +215,7 @@ void div(int x, int y)
 
 ```
 
-If the exception is not handled in ``div()`` where it occurs the exception is sent up the call chain to the statement where the method ``div()`` was called.  Java will look for a ``try catch`` statement enclosing the method call.  
+If the exception is not handled in ``div()`` where it occurs the exception is sent up the call chain to the statement where the method ``div()`` was called.  If it does Java will look for a ``try catch`` statement enclosing the method call.  
 
 So, we could have caught the exception with code like this:
 
@@ -247,6 +249,90 @@ void div(int x, int y)
 
 ```
 
+
+## Throwing Exceptions
+
+Exceptions are caused in two ways: the program does something illegal (common case), or the program explicitly generates an exception by executing the Java ``throw`` statement (less common case).  We've seen how to deal with the first type.  
+
+Let's see how to *throw* an exception.
+
+Here is the class ``Spot`` we've seen before:
+
+```java
+public class Spot
+{
+  private float x, y;
+  private float diameter;
+
+  public Spot()  
+  {
+    // initialise with default values
+    this.x=100;
+    this.y=100;
+    this.diameter=50;
+  }
+
+  public Spot(float x, float y)  
+  {
+    // initialise with default values
+    this.x=x;
+    this.y=y;
+    this.diameter=50;
+  }
+
+  public void display()
+  {
+    ellipse(x, y, diameter, diameter);
+  }
+}
+
+```
+
+Notice the second constructor can be used to set the initial (x,y) coordinates of the spot.  However, there is no check done for illegal (x,y) values.  For example, this statement should not be allowed:
+
+```java
+Spot sp = new Spot(-100,-100);
+
+```
+
+The statement above will create a spot that will never appear inside the program window.  We can throw an exception if this happens.
+
+The second Spot constructor can be modified to this:
+
+```java
+  public Spot(float x, float y) throws Exception
+  {
+    if(x<0 || x>width || y<0 || y>height)
+      throw new Exception("(x,y) value outside of window");
+    // initialise with default values
+    this.x=x;
+    this.y=y;
+    this.diameter=50;
+  }
+
+```
+
+Two things to mention here.
+
+1.  An ``if`` statement checks if either of the (x,y) values are outside the window area and if so, throws an ``Exception`` object with the messsage "(x,y) value outside of window".
+
+2.  The method signature of the constructor **must** be updated to indicate that it can throw an exception.
+
+Now, any statement that uses this constructor must write a ``try catch`` block like this:
+
+```java
+try
+{
+  Spot sp = new Spot(-100,-100);
+}
+catch(Exception e)
+{
+  println(e.getMessage());
+}
+
+```
+
+So if the code above executes the message "(x,y) value outside of window" will be printed.
 
 ## User-Defined Exceptions
 
