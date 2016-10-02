@@ -16,22 +16,21 @@ Below is an example without any exception handling - i.e. an exception will be t
 ```java
 void setup()
 {
-  division(100, 4);     // Line 1
-  division(100, 0);     // Line 2    
-  println("End of program");
+  div(100, 4);     // Line 1
+  div(100, 0);     // Line 2
+  println("End of program");   
 }
 
 void draw()
 {
 }
 
-void division(int totalSum, int totalNumber) 
+void div(int x, int y)
 {
-  println("Computing Division.");  
-  int average = totalSum/totalNumber; 
-  println("Average : "+ average);
+  println("Computing Division.");
+  int ans = x/y;
+  println(x+" / "+y+" = "+ ans);
 }
-
 ```
 
 And here's the output when we run the program:
@@ -40,7 +39,7 @@ And here's the output when we run the program:
 ** ArithmeticException: / by zero **
 
 Computing Division.
-Average : 25
+100 / 4 = 25
 Computing Division.
 
 ```
@@ -86,23 +85,23 @@ Here's a solution to our previous program code:
 ```java
 void setup()
 {
-  division(100, 4);     // Line 1
-  division(100, 0);     // Line 2
-  println("End of program");
+  div(100, 4);     // Line 1
+  div(100, 0);     // Line 2
+  println("End of program");  
+  exit();
 }
 
 void draw()
 {
 }
 
-void division(int totalSum, int totalNumber) 
+void div(int x, int y)
 {
   println("Computing Division.");
-
   try
   {
-    int average = totalSum/totalNumber;
-    println("Average : "+ average);
+    int ans = x/y;
+    println(x+" / "+y+" = "+ ans);
   }
   catch(ArithmeticException e)
   {
@@ -123,9 +122,11 @@ End of program
 
 ```
  
-Let's look at the output first:
+Let's look at the output:
 
-We're no longer getting a run-time error.  That's because we're now catching (handling) the exception - rather than the Java run-time environment.
+We're no longer getting a run-time error.  That's because we're now catching (handling) the exception - rather than the Java run-time environment.  The ``catch```block is passed a object ``e`` with information about the exception.
+
+The ``getMessage()`` method returns a detail message about the problem.
 
 Also, the code is now getting a chance to finish (i.e. print out "End of program"). Again, this is because we've caught the exception and the assumption is made that the program can continue.
 
@@ -153,7 +154,7 @@ int[] lottonumbers = {11, 22, 31, 34, 35, 46};
 void setup()
 {
   //size(800,800);  
-  for (int i=0; i&lt;lottonumbers.length+1; i++)
+  for (int i=0; i<lottonumbers.length+1; i++)
   {
     try
     {
@@ -186,6 +187,67 @@ It will print:
 
 ```
 
-This is an introduction. It is enough to get us started with the concept of exception handling. 
+This is an introduction. It is enough to get us started with the concept of exception handling. We will revist this topic later.
+
+## Exception Propagation
+
+In the previous program where a division by zero runtime error occured the exception was handled within the ``div()`` method like this:
+
+```java
+...
+...
+
+void div(int x, int y)
+{
+  println("Computing Division.");
+  try
+  {
+    int ans = x/y;
+    println(x+" / "+y+" = "+ ans);
+  }
+  catch(ArithmeticException e)
+  {
+    println("Exception : "+ e.getMessage());
+  }  
+}
+
+```
+
+If the exception is not handled in ``div()`` where it occurs the exception is sent up the call chain to the statement where the method ``div()`` was called.  Java will look for a ``try catch`` statement enclosing the method call.  
+
+So, we could have caught the exception with code like this:
+
+```java
+void setup()
+{
+  try
+  {
+    div(100, 4);     // Line 1
+    div(100, 0);     // Line 2
+  }
+  catch(ArithmeticException e)
+  {
+    println("Exception : "+ e.getMessage());
+  }
+
+  println("End of program");  
+  exit();
+}
+
+void draw()
+{
+}
+
+void div(int x, int y)
+{
+  println("Computing Division.");
+  int ans = x/y;
+  println(x+" / "+y+" = "+ ans);
+}
+
+```
 
 
+## User-Defined Exceptions
+
+To do.
