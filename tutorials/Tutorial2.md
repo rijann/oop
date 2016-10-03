@@ -259,6 +259,6 @@ We have a class ``Cards`` to store and handle the cards, and we can then create 
 	Note:  you should comment out the statement below in the ``setup()`` method:
 
 	```java
-	noLoop();
+	// noLoop();
 
 	```
