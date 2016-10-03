@@ -254,7 +254,7 @@ void div(int x, int y)
 
 Exceptions are caused in two ways: the program does something illegal (common case), or the program explicitly generates an exception by executing the Java ``throw`` statement (less common case).  We've seen how to deal with the first type.  
 
-Let's see how to *throw* an exception.
+Let's see how and why we might *throw* an exception.
 
 Here is the class ``Spot`` we've seen before:
 
@@ -297,7 +297,7 @@ Spot sp = new Spot(-100,-100);
 
 The statement above will create a spot that will never appear inside the program window.  We can throw an exception if this happens.
 
-The second Spot constructor can be modified to this:
+The second ``Spot`` constructor can be modified to this:
 
 ```java
   public Spot(float x, float y) throws Exception
