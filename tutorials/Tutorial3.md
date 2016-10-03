@@ -1,4 +1,4 @@
-# Tutorial #2 - Exceptions
+# Tutorial #3 - Exceptions
 
 These exercises are intended to get you used to working with ``try``, ``catch`` and ``throw``.
 
