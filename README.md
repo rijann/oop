@@ -7,13 +7,14 @@ A repository for module *Object Orient Programming* Semester 3.
 - [Processing Primer](./notes/ProcessingPrimer.md)
 - [Arrays & Arraylists](./notes/ArraysAndArraylists.md)
 - [Abstraction & Encapsulation](./notes/ObjectOrientedProgramming.md)
+- [Exceptions](./notes/Exceptions.md)
 - Composition
 - Inheritance
 - Polymorphism
 - Abstract Classes
 - Interfaces
 - Sorting & Searching
-- Exceptions
+
 
 ## Lectures
 - Processing
@@ -23,6 +24,7 @@ A repository for module *Object Orient Programming* Semester 3.
 ## Tutorials
 - [Tutorial 1](./tutorials/Tutorial1.md)
 - [Tutorial 2](./tutorials/Tutorial2.md)
+- [Tutorial 3](./tutorials/Tutorial3.md)
 
 ## Assessment
 
