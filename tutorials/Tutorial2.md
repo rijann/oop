@@ -228,3 +228,37 @@ We have a class ``Cards`` to store and handle the cards, and we can then create 
 6.	Again, try to prevent the code from displaying duplicate cards.
 
 
+## Part 7 - Additional ArrayList Exercises
+
+1.	Open and run the program ``tut02_08`` again.
+	A new spot should appear where the mouse is pressed and move across the window.
+
+	Modify the code so spots are removed from the arraylist when they disappear off the right-hand side of the window.  You should notice the console output showing the correct number of spots in the arraylist.
+
+2.	Open and run the program ``tut02_09`` again.
+	3 bubbles should float up the window.
+
+	Modify the code so that when the bubbles reach the top of the window they stay there.  It's as if the top of the window is like a line they cannot cross.  Make sure you can see the entire bubble, not half of it.
+
+3.	Increase the window size to 600x600.
+
+4.	Instead of creating 3 bubbles, try to create a random number of bubbles from a minimum of 1 to a maximum of 20.
+
+5.	At the end of the ``draw()`` method add code to print the size of the bubbles arraylist.
+
+6.	Modify the code so if the mouse is pressed inside a bubble that bubble should disappear.  Remove the bubble from the arraylist.  Try to *burst* all the bubbles before they reach the top of the window.  Checkout the method [dist()](https://processing.org/reference/dist_.html).
+
+7.	If there are no bubbles left exit the program.
+
+8.	Open and run the program ``tut02_11`` again.
+
+9.	If a card is clicked with the mouse change the card to another card.
+
+	Make sure it isn't a duplicate.
+
+	Note:  you should comment out the statement below in the ``setup()`` method:
+
+	```java
+	noLoop();
+
+	```
