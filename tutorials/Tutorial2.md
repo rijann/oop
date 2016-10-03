@@ -230,6 +230,8 @@ We have a class ``Cards`` to store and handle the cards, and we can then create 
 
 ## Part 7 - Additional ArrayList Exercises
 
+Only do this part **after** you have completed [Tutorial 3](https://github.com/barcaxi/oop/blob/master/tutorials/Tutorial3.md).
+
 1.	Open and run the program ``tut02_08`` again.
 	A new spot should appear where the mouse is pressed and move across the window.
 
