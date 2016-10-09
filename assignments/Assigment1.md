@@ -235,8 +235,10 @@ You are required to:
 		}
 	}
 
+	```
 
-2.	Use this updated code for the ``Planet`` method ``display()``. 
+
+2.	Use this updated code for the ``Planet`` method ``display()``.
 	Notice how it checks for ``null`` moons!
 
 	```java
