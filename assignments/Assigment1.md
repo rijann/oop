@@ -18,7 +18,7 @@ Some of the classes you create in one part may be copied into another (and perha
 
 You should store your classes and testers in a folder called ``part1``.
 
-![alt text](../images/Moon1.png "Moon class")
+![alt text](images/Moon1.png "Moon class")
 
 A class called ``Moon`` is designed as shown in the class diagram.  It contains:
 
@@ -49,7 +49,7 @@ println(moon);
 
 If your code is completed correctly, you should see a moon orbit the middle of the window.
 
-![alt text](../images/PlanetHasAMoon.png "Planet has-a Moon")
+![alt text](images/PlanetHasAMoon.png "Planet has-a Moon")
 
 A class called ``Planet`` is designed as shown in the class diagram. 
 It contains:
@@ -109,7 +109,7 @@ Try:
 
 Open the test program ``TestPlanetMoons`` from the ``part2`` folder.
 
-![alt text](../images/PlanetHasAMoon2.png "Planet has 0..many Moons")
+![alt text](images/PlanetHasAMoon2.png "Planet has 0..many Moons")
 
 In the previous part the assumption was that a planet has one and only one moon. 
 In reality, a planet can have none, one or more moons. 
@@ -203,7 +203,7 @@ If your code is completed correctly, you should see a planet with two moons orbi
 
 Open the test program ``TestPlanetMoons`` from the ``part3`` folder.
 
-![alt text](../images/PlanetHasAMoon3.png "Planet has 0..many Moons")
+![alt text](images/PlanetHasAMoon3.png "Planet has 0..many Moons")
 
 
 In Part 2, the number of moons cannot be changed once a ``Planet`` instance is constructed. Suppose that we wish to allow the user to add more moons (which is not as unusual as you think, new moons were discovered in our Solar System in 2007!).
