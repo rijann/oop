@@ -5,8 +5,8 @@
 
 - [Part 1](#part-1---moon-and-planet-classes)
 - [Part 2](#part-2---planet-and-moon-classes---array-of-objects)
-- [Part 3](#part-3)
-- [Part 4](#part-4)
+- [Part 3](#part-3---planet-and-moon-classes---fixed-length-array-of-objects)
+- [Part 4](#part-4---solarsystem-class)
 - [Part 5](#part-5)
 
 
@@ -339,7 +339,7 @@ public class SolarSystem
 }
 ```
 
-Please note that there is no requirement for inheritance here - a ``SolarSystem`` IS NOT A Planet (doesn’t adhere to the "is a" relationship.)
+Please note that there is no requirement for inheritance here - a ``SolarSystem`` IS NOT A ``Planet`` (doesn't adhere to the "is-a" relationship.)
 
 To get information into (and out of) our arraylist we now need to do that through ``SolarSystem`` methods like ``addPlanet()``.
 
@@ -396,6 +396,7 @@ The ``Location`` class is used by the ``Enemy`` and ``Player`` classes to store 
 
 Below is the basic grid-world with the player (Pacman) and four enemies (ghosts). The grid size is set for 6*6.
 
+![alt text](images/Game.png "Game")
 
 Task
 ----
