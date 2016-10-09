@@ -3,8 +3,8 @@
 ## Contents
 
 
-- [Part 1](#part-1)
-- [Part 2](#part-2)
+- [Part 1](#part-1---moon-and-planet-classes)
+- [Part 2](#part-2---planet-and-moon-classes---array-of-objects)
 - [Part 3](#part-3)
 - [Part 4](#part-4)
 - [Part 5](#part-5)
