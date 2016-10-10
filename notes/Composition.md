@@ -31,7 +31,7 @@ There are lots of situations where this would make sense.  For example, if two c
 
 > A ``Book`` **has-a** ``Author``
 
-The code for this could look like this.  ``Author``:
+The code for this could look like this.  ``Author`` class:
 
 ```java
 class Author
@@ -51,7 +51,7 @@ class Author
 
 ```
 
-``Book``:
+``Book`` class:
 
 ```java
 class Book
