@@ -6,7 +6,7 @@
 
 ## Composition
 
-We know that a class is a template for making an object.  The class has data and functionality:
+We know that a class is a template for making an object.  The class has data and functionality.  For example:
 
 ```java
 class Spot
@@ -25,8 +25,7 @@ class Spot
 }
 ```
 
-The data in a class doesn't just have to be of type ``int``, ``float``, etc.  
-It can be other objects!
+The data in a class doesn't just have to be of type ``int``, ``float``, etc.  It can be other objects!
 
 There are lots of situations where this would make sense.  For example, if two classes have an obvious relationship to each other.  An example of two classes that have a relationship is a ``Book`` and ``Author`` class.  
 
@@ -59,6 +58,16 @@ class Book
   {
     title=this.title;
     this.author=author;
+  }
+
+  public String getTitle()
+  {
+    return title;
+  }
+
+  public Author getAuthor()
+  {
+    return author;
   }
 }
 
