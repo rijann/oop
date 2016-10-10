@@ -29,7 +29,7 @@ This program illustrate composition again:
 
 Read on...
 
-Open the program [tut04_03](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut04_01) and write the missing code for the ``Lizard`` class. 
+Open the program [tut04_03](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut04_03) and write the missing code for the ``Lizard`` class. 
 
 ![alt text](../images/Lizard.png "Lizard class")
 
