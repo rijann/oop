@@ -87,4 +87,4 @@ Other examples of classes that have a *has-a* relationship are:
 
 That's composition.
 
-There is another type of relationship that classes can have with each other in certain situations.  The **is-a** relationship.  This is known implemented as *inheritance*, and we'll see this soon.
+There is another type of relationship that classes can have with each other in certain situations.  The **is-a** relationship.  This is known and implemented as *inheritance*. We'll see this soon.
