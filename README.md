@@ -33,6 +33,6 @@ Assessment consists of Continuous Assessment (60%) and an Examination (40%).
 
 Continuous Assessment:
 
-- Week 06 Assignment #1
+- [Assignment 1](./assignments/Assigment1.md)
 - Week 12 Class Test Assignment #2
 - Week 13 Assignment #3
