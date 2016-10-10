@@ -8,7 +8,7 @@ A repository for module *Object Orient Programming* Semester 3.
 - [Arrays & Arraylists](./notes/ArraysAndArraylists.md)
 - [Exceptions](./notes/Exceptions.md)
 - [Abstraction & Encapsulation](./notes/ObjectOrientedProgramming.md)
-- Composition
+- [Composition](./notes/Composition.md)
 - Inheritance
 - Polymorphism
 - Abstract Classes
