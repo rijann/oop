@@ -1,4 +1,4 @@
-# Tutorial #3 - Composition
+# Tutorial #4 - Composition
 
 ## Part 1 - Book "has-a" Author
 
@@ -52,6 +52,8 @@ The ``Lizard`` class has:
 
 
 1.	Complete the missing code in ``Lizard`` class.  If completed correctly the project should run.  A fly should annoy the lizard.
+
+	![alt text](../images/LizardFly.gif "Lizard has-a Fly")
 
 
 2.	Next, modify the code in the ``Lizard`` class so that it supports an array of 10 ``Fly`` objects.  You will not need to modify any code in the ``Fly`` class.
