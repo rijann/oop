@@ -13,6 +13,7 @@
 Note: For each part you should have separate folders (``part1``, ``part2``, etc). 
 Some of the classes you create in one part may be copied into another (and perhaps modified for the purposes of that part).
 
+Get the project folders [here](https://github.com/barcaxi/oop/blob/master/assignments/code/AllParts.zip?raw=true).
 
 ## Part 1 - Moon and Planet Classes
 
