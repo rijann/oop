@@ -3,17 +3,20 @@
 ## Contents
 
 
-- [Part 1](#part-1---moon-and-planet-classes)
-- [Part 2](#part-2---planet-and-moon-classes---array-of-objects)
-- [Part 3](#part-3---planet-and-moon-classes---fixed-length-array-of-objects)
-- [Part 4](#part-4---solarsystem-class)
-- [Part 5](#part-5)
+- [Part 1](#part-1---moon-and-planet-classes) [15%]
+- [Part 2](#part-2---planet-and-moon-classes---array-of-objects) [10%]
+- [Part 3](#part-3---planet-and-moon-classes---fixed-length-array-of-objects) [25%]
+- [Part 4](#part-4---solarsystem-class) [15%]
+- [Part 5](#part-5) [30%]
 
 
 Note: For each part you should have separate folders (``part1``, ``part2``, etc). 
 Some of the classes you create in one part may be copied into another (and perhaps modified for the purposes of that part).
 
 Get the project folders [here](https://github.com/barcaxi/oop/blob/master/assignments/code/AllParts.zip?raw=true).
+
+You will need to keep a small journal or log that records a brief description of your work on the assignment.  Please complete this log on a daily basis.  Your supervising lecturer will examine it from time to time and marks will be awarded for completing it correctly.
+
 
 ## Part 1 - Moon and Planet Classes
 
