@@ -317,7 +317,7 @@ New functionality may be easily added without changing existing classes as long 
 
 Let's develop a working example of inheritance in Processing.
 
-A typical example of inheritance involves shapes - useful because of its simplicity. We will create a generic ``Shape`` class where all Shape objects have an  x,y location as well as a size, and a function for display. 
+A typical example of inheritance involves shapes - useful because of its simplicity. We will create a generic ``Shape`` class where all ``Shape`` objects have an (x,y) location as well as a size, and a function for display. 
 
 The code for ``Shape`` looks like this:
 
@@ -347,6 +347,7 @@ public class Shape
 
 Next, we create a subclass ``Square`` that extends ``Shape``. 
 
+```java
 public class Square extends Shape
 {  
   public Square(int x, int y, int radius)
@@ -360,6 +361,8 @@ public class Square extends Shape
     rect(x, y, radius, radius);
   }
 }
+
+```
 
 - It will inherit all the methods from ``Shape``. 
 
