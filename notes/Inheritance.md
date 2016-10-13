@@ -317,6 +317,8 @@ New functionality may be easily added without changing existing classes as long 
 
 Let's develop a working example of inheritance in Processing.
 
+![alt text](../images/inheritance3a.png "Shape, Square, Circle")
+
 A typical example of inheritance involves shapes - useful because of its simplicity. We will create a generic ``Shape`` class where all ``Shape`` objects have an (x,y) location as well as a size, and a function for display. 
 
 The code for ``Shape`` looks like this:
@@ -363,6 +365,7 @@ public class Square extends Shape
 }
 
 ```
+
 
 - It will inherit all the methods from ``Shape``. 
 
