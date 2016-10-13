@@ -11,13 +11,13 @@
 
 ##  Introduction
 
-To see what inheritance means in practice, consider the example of the taxonomy of the animal kingdom.  In biology, animals are classified by whether they have a spinal cord (vertebae) or not.  All *mammals* have a spinal cord.  They inherit it as a characteristic because they are a subclass of *vertebrates*.  
+To see what inheritance means in practice, consider the example of the taxonomy of the animal kingdom.  In biology, animals are classified by whether they have a spinal cord (vertebrae) or not.  All *mammals* have a spinal cord.  They inherit it as a characteristic because they are a subclass of *vertebrates*.  
 
 ![alt text](../images/inheritance1.png "Simple Animal Classification")
 
 In Java inheritance occurs when a class adopts or adapts the data structures and methods of a parent class.  That creates a hierarchy, similar to taxonomies in the animal kingdom.  Each level is a specialisation of the one above in the hierarchy.  
 
-Inheritance is one of the concepts people mean when they talk about Object-Oriented Programming.
+Inheritance is one of the key concepts people mean when they talk about Object-Oriented Programming.
 
 Let's take a look at the world of animals: dogs, cats, monkeys, pandas, wombats, etc. 
 
@@ -88,14 +88,13 @@ Notice how dogs and cats have the same variable ``age`` and methods ``eat()`` an
 
 What if we could develop a generic ``Animal`` class to describe any type of animal? After all, all animals have an age, eat, and sleep. We could then say the following:
 
-- A dog is an animal and has all the properties of animals and can do all the things animals can do. In addition, a dog can bark.
+- A dog **is-a** animal and has all the properties of animals and can do all the things animals can do. In addition, a dog can bark.
 
-- A cat is an animal and has all the properties of animals and can do all the things animals can do. In addition, a cat can meow. 
+- A cat **is-a** animal and has all the properties of animals and can do all the things animals can do. In addition, a cat can meow. 
 
 The relationship described is known as a **is-a** relationship.
 
-> A ``Dog`` **is-a** ``Animal``
-> A ``Cat`` **is-a** ``Animal``
+> A ``Dog`` **is-a** ``Animal`` and a ``Cat`` **is-a** ``Animal``
 
 
 *Inheritance* allows us to program just this. With inheritance, classes can inherit  properties (variables) and functionality (methods) from other classes. The ``Dog`` class is a child (AKA a *subclass*) of the ``Animal`` class.  Children inherit all variables and functions automatically from their parent (AKA *superclass*). Children can also include additional variables and functions not found in the parent. Inheritance follows a treestructure (much like a taxonomy of the animal kingdom). Dogs can inherit from Canines which inherit from Mammals which inherit from vertabrates, and so on. 
@@ -128,7 +127,7 @@ public class Animal
   // setter and getter for age
   public int setAge(int age)
   {
-    return this.age=age;
+    this.age=age;
   }
 
   public int getAge()
@@ -217,7 +216,7 @@ yummy!
 
   ```
 
-- ``bark()```and ``meow()`` are defined in ``Dog`` and ``Cat`` as they are a characteristic specific to that class.
+- ``bark()`` and ``meow()`` are defined in ``Dog`` and ``Cat`` as they are a characteristic specific to that class.
 
 A subclass can be expanded to include additional functions and properties beyond what is contained in the superclass. For example, let's assume that a ``Dog`` object has a hair color variable in addition to age:
 
@@ -242,7 +241,7 @@ public class Dog extends Animal
 
 Note how the parent constructor is called via ``super()``, setting the age to 0, but the haircolor is set inside the ``Dog`` constructor itself.
 
-Suppose a ``Dog`` object eats differently than a generic ``Animal``. Parent functions can be overridden by rewriting the function inside the subclass:
+Suppose a ``Dog`` object eats differently than a generic ``Animal``. Parent functions can be **overridden** by rewriting the function inside the subclass:
 
 ```java
 public class Dog extends Animal 
@@ -305,16 +304,16 @@ Note how the parent method ``eat()`` is called via ``super().eat()`` first and t
 
 ## Why Use Inheritance?
 
-**Reusability**.  
+**Reusability**
+
 Building new components by utilising existing components is an important aspect of OO paradigm.  It's always good if we are able to reuse something that is already exists rather than creating the same all over again.  This is achieved by creating new classes, reusing the properties of existing classes.
 
 **Extensibility**
+
 New functionality may be easily added without changing existing classes as long the new functionality extends given base classes. 
 
 
 ## An Example of Inheritance
 
-Vehicle - Car???
-Shape - Circle - Rectangle???
-
+to do
 
