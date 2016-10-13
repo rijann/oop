@@ -315,5 +315,142 @@ New functionality may be easily added without changing existing classes as long 
 
 ## An Example of Inheritance
 
-to do
+Let's develop a working example of inheritance in Processing.
+
+A typical example of inheritance involves shapes - useful because of its simplicity. We will create a generic ``Shape`` class where all Shape objects have an  x,y location as well as a size, and a function for display. 
+
+The code for ``Shape`` looks like this:
+
+```java
+public class Shape
+{
+  private int x;
+  private int y;
+  private int radius;
+
+  public Shape(int x, int y, int radius)
+  {
+    this.x=x;
+    this.y=y;
+    this.radius=radius;
+  }
+
+  public void display()
+  {
+    point(x, y);
+  }
+}
+
+```
+
+- This generic shape doesn't know how to be displayed yet. This will be implemented in the child classes.
+
+Next, we create a subclass ``Square`` that extends ``Shape``. 
+
+public class Square extends Shape
+{  
+  public Square(int x, int y, int radius)
+  {
+    super(x, y, radius);
+  }
+
+  public void display()
+  {    
+    rectMode(CENTER);
+    rect(x, y, radius, radius);
+  }
+}
+
+- It will inherit all the methods from ``Shape``. 
+
+- It has a new constructor named ``Square`` that gets 3 arguments for x, y, and radius.  It executes the code in the parent class constructor by calling ``super()``.  Note how it passes the ``Square`` constructor arguments x, y, and radius to the parent constructor using:
+
+  ```java
+  super(x, y, radius);
+
+  ```
+
+- Also, because we want to display the square onscreen, we override the ``display()`` method.
+
+
+However, there is a compilation error that appears:
+
+![alt text](../images/inheritance3.png "Shape.x in not visible")
+
+The compiler is telling use that the ``Shape`` variable ``x`` is not visible.  If you look at the code for Shape's ``x`` variable you'll see that it and y, radius were declared as a private:
+
+```java
+private int x;
+private int y;
+private int radius;
+
+```
+
+This means that these variables are not visible outside the class ``Shape``.  Even if we extend ``Shape`` in ``Square`` those variables cannot be accessed outside ``Shape``.  To solve this we need to write public getter methods for x, y and radius.  
+
+Our updated ``Shape`` class will look like this:
+
+```java
+public class Shape
+{
+  private int x;
+  private int y;
+  private int radius;
+
+  public Shape(int x, int y, int radius)
+  {
+    this.x=x;
+    this.y=y;
+    this.radius=radius;
+  }
+
+  public void display()
+  {
+    point(x, y);
+  }
+
+  public int getX()  // public method accessible outside Shape
+  {
+    return x;
+  }
+
+  public int getY()  // public method accessible outside Shape
+  {
+    return y;
+  }
+
+  public int getRadius()  // public method accessible outside Shape
+  {
+    return radius;
+  }
+}
+
+```
+
+
+
+We write a new constructor with the name “ Square ” and execute the code from the
+parent class by calling super( )
+
+
+
+
+
+
+Then in tutorial get them to use Shape, Circle, Square for plotting goals and points in GAA matches.  Left mouse, right mouse.
+
+## Method Overriding
+
+
+## Is-a versus Has-a
+
+vLind p148
+
+## Multiple inheritance
+
+vLind p149
+
+
+
+
 
