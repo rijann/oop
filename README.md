@@ -9,7 +9,7 @@ A repository for module *Object Orient Programming* Semester 3.
 - [Exceptions](./notes/Exceptions.md)
 - [Abstraction & Encapsulation](./notes/ObjectOrientedProgramming.md)
 - [Composition](./notes/Composition.md)
-- Inheritance
+- [Inheritance](./notes/Inheritance.md)
 - Polymorphism
 - Abstract Classes
 - Interfaces
