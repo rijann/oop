@@ -202,7 +202,7 @@ yummy!
 
   ```
 
-- The ``super()`` keyword means execute the code found in the parent class constructor.  For example, ``super()`` in the ``Dog`` constructor calls the ``Animal`` class constructor ``Animal()`` first.
+- The ``super()`` keyword means execute the code found in the parent class constructor.  For example, ``super()`` in the ``Dog`` constructor calls the ``Animal`` class constructor ``Animal()`` first.  This is sometimes referred to as *constructor chaining*.
 
   ```java
     ...
@@ -345,7 +345,7 @@ public class Shape
 
 ```
 
-- This generic shape doesn't know how to be displayed yet. This will be implemented in the child classes.
+- This generic shape doesn't know how to be displayed yet. This will be implemented in the subclasses.
 
 Next, we create a subclass ``Square`` that extends ``Shape``. 
 
@@ -359,7 +359,7 @@ public class Square extends Shape
 
   public void display()
   {    
-    rectMode(CENTER);
+    rectMode(CENTER); 
     rect(x, y, radius, radius);
   }
 }
@@ -369,7 +369,7 @@ public class Square extends Shape
 
 - It will inherit all the methods from ``Shape``. 
 
-- It has a new constructor named ``Square`` that gets 3 arguments for x, y, and radius.  It executes the code in the parent class constructor by calling ``super()``.  Note how it passes the ``Square`` constructor arguments x, y, and radius to the parent constructor using:
+- It has a new constructor named ``Square`` that gets 3 arguments for x, y, and radius.  It executes the code in the parent class constructor by calling ``super()``.  Note how it passes the ``Square`` constructor arguments ``x``, ``y``, and ``radius`` to the parent constructor with the same number of arguments:
 
   ```java
   super(x, y, radius);
@@ -383,7 +383,7 @@ However, there is a compilation error that appears:
 
 ![alt text](../images/inheritance3.png "Shape.x in not visible")
 
-The compiler is telling use that the ``Shape`` variable ``x`` is not visible.  If you look at the code for Shape's ``x`` variable you'll see that it and y, radius were declared as a private:
+The compiler is telling use that the ``Shape`` variable ``x`` is not visible.  If you look at the code for Shape's ``x`` variable you'll see that it, ``y``, and ``radius`` were declared as a ``private``:
 
 ```java
 private int x;
@@ -392,7 +392,9 @@ private int radius;
 
 ```
 
-This means that these variables are not visible outside the class ``Shape``.  Even if we extend ``Shape`` in ``Square`` those variables cannot be accessed outside ``Shape``.  To solve this we need to write public getter methods for x, y and radius.  
+This means that these variables are not visible outside the class ``Shape``.  Even because we extend ``Shape`` in ``Square`` those variables cannot be accessed outside ``Shape``.  To solve this we need to write public getter methods for ``x``, ``y`` and ``radius``.  
+
+Never declare class variables as ``public``.  If you do then you're messing with the whole point of having classes.  The only code that should access a class variable is the class's methods.  That is the principle of *encapsulation*.
 
 Our updated ``Shape`` class will look like this:
 
@@ -433,28 +435,77 @@ public class Shape
 
 ```
 
+and the ``Square`` class ``display()`` method is updated to this:
 
+```java
+public class Square extends Shape
+{  
+  public Square(int x, int y, int radius)
+  {
+    super(x, y, radius);
+  }
 
-We write a new constructor with the name “ Square ” and execute the code from the
-parent class by calling super( )
+  public void display()
+  {    
+    rectMode(CENTER);
+    rect(getX(), getY(), getRadius(), getRadius());  // uses public getters from Shape
+  }
+}
 
+```
 
+To demonstrate that inheritance is working, here is code to makes a ``Square``
 
+```java
+Square s;
 
+void setup() 
+{
+  size(200,200);
 
+  // A square and circle
+  s = new Square(75,75,10);
+}
 
-Then in tutorial get them to use Shape, Circle, Square for plotting goals and points in GAA matches.  Left mouse, right mouse.
+void draw() 
+{
+  background(0,0,0);
+  s.display();
+}
+
+```
 
 ## Method Overriding
+
+We've already seen instances of where a child class *overrides* parent methods by rewritting the method inside the child class.  For example:
+
+1.  the ``eat()`` method in ``Dog`` overrides the ``eat()`` method in ``Animal``
+2.  the ``display()`` method in ``Square`` overrides the ``display()`` method in ``Shape``
+
+
+An overridden method is simply a method in a subclass that has the exact same signature as a method in the superclass. Note that this implies it is specifically to do with inheritance.
+
+Note, method overriding is different from method overloading.
 
 
 ## Is-a versus Has-a
 
-vLind p148
+Don't confuse inheritance with compositon, that is, having a data field that is another class.
+
+The way to distinguish between these two concepts is to ask yourself the "is-a" versus "has-a" question.  Let's assume you have a ``Car`` class and an ``Engine`` class, and you want to decide where to use inheritance or composition.  Would you say "a car has an engine" or "a car is an engine"?  If the answer is "has-a" use composition.  If the answer is "is-a" use inheritance.
+
+In general, inheritance is for specialisation of a class and composition is for reuse of a class.
+
+
+## Access Modifiers
+
+To do.
 
 ## Multiple inheritance
 
-vLind p149
+You may have heard about OOP languages having multiple inheritance.  That means having more than one immediate parent class.  The child class would have characteristics from all its immediate parent classes.
+
+Java does not support direct multiple inheritance, but does provide a similar way of implementing it using *interfaces*.  More on *interfaces* later.
 
 
 
