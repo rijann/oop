@@ -2,11 +2,13 @@
 
 ## Contents
 
-- [Inheritance](#inheritance)
-- [An Example of Inheritance]
-- [Access Modifiers]
-- [Method overriding]
-
+- [Introducation](#introduction)
+- [Why Use Inheritance](#why-use-inheritance)
+- [An Example of Inheritance](#an-example-of-inheritance)
+- [Method overriding](#method-overriding)
+- [Is-a versus Has-a](#is-a-versus-has-a)
+- [Access Modifiers](#access-modifiers)
+- [Multiple Inheritance](#multiple-inheritance)
 
 
 ##  Introduction
