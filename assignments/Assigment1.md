@@ -429,7 +429,7 @@ I’ve removed some functionality from the completed game. Therefore, when you r
 
 	```
 
-6.	Identify a common class variable and class method both ``Player`` and ``Enemy`` classes use.  Instead of the unnecessary code duplication we currently have, create a superclass called ``GameCharacter`` to store the variable and method, and have ``Player`` and ``Enemy``  inherit from this new class.  Remove the duplicate variable and method from both ``Player```and ``Enemy``.  Using this superclass will require some modifications to your existing code.
+6.	Identify a common class variable and class method both ``Player`` and ``Enemy`` classes use.  Instead of the unnecessary code duplication we currently have, create a superclass called ``GameCharacter`` to store the variable and method, and have ``Player`` and ``Enemy``  inherit from this new class.  Remove the duplicate variable and method from both ``Player`` and ``Enemy``.  Using this superclass will require some modifications to your existing code.
 
 7.	Create an ``AdvancedPlayer`` class which is a subclass of ``Player``.  It has the ability to move the PacMan left, right, up, down and **diagonally**.  Override the current ``Player`` method ``move()``. Test it using this code:
 
