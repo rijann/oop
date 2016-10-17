@@ -14,7 +14,7 @@ A class called ``Circle`` is designed as shown above. It contains:
 -	three public methods: ``display()``, ``getRadius()`` and ``getArea()``
 
 
-1.	Open and run the program [tut05_01](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut05_01).  Make sure you understand how this is working.
+1.	Open and run the program [tut05_01](https://github.com/barcaxi/oop/blob/master/code/tutorials/tut05_01/tut05_01.zip?raw=true).  Make sure you understand how this is working.
 
 2.	 Modify the class ``Circle`` to include a second constructor for constructing a ``Circle`` instance with arguments for ``x``, ``y`` and ``radius``:
 
@@ -50,7 +50,7 @@ A class called ``Circle`` is designed as shown above. It contains:
 	```java
 	c = new Circle();
 	c.setX(100);
-	c.setT(100);
+	c.setY(100);
 	c.setRadius(30);
 
 	```
@@ -95,7 +95,7 @@ A class called ``Circle`` is designed as shown above. It contains:
 
 In this exercise a ``Cat`` and ``Dog`` class are implemented as subclasses of an ``Animal`` class as shown above.
 
-1.	Open and run the program [tut05_02](https://github.com/barcaxi/oop/tree/master/code/tutorials/tut05_02).  
+1.	Open and run the program [tut05_02](https://github.com/barcaxi/oop/blob/master/code/tutorials/tut05_02/tut05_02.zip?raw=true).  
 
 2.	Examine the output in the console windown and take time to trace each method called for the ``cat`` and ``dog`` objects.  Make sure you understand this code.
 
