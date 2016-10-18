@@ -7,7 +7,7 @@
 - [Part 2](#part-2---planet-and-moon-classes---array-of-objects) [10%]
 - [Part 3](#part-3---planet-and-moon-classes---fixed-length-array-of-objects) [25%]
 - [Part 4](#part-4---solarsystem-class) [15%]
-- [Part 5](#part-5) [30%]
+- [Part 5](#part-5---simple-game) [30%]
 
 
 Note: For each part you should have separate folders (``part1``, ``part2``, etc). 
