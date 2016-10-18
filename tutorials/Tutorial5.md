@@ -34,13 +34,7 @@ A class called ``Circle`` is designed as shown above. It contains:
 
 	```
 
-5.	In ``tut05_01`` can you access the instance variable radius directly? For example:
-
-	```java
-	println(c.radius); 
-
-	````
-	Try it out and understand the error message.
+5.	Accessing private class variables.  SKIP FOR NOW.
 
 
 6.	Add three public **setter** methods for changing the ``x``, ``y``, and ``radius`` class variables in ``Circle``.
