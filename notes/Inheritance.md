@@ -503,6 +503,8 @@ In general, inheritance is for specialisation of a class and composition is for 
 
 To do.
 
+[image](https://raw.githubusercontent.com/barcaxi/oop/master/images/accessPrivatePublic.png)
+
 ## Multiple inheritance
 
 You may have heard about OOP languages having multiple inheritance.  That means having more than one immediate parent class.  The child class would have characteristics from all its immediate parent classes.
