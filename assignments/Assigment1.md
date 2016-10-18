@@ -414,16 +414,15 @@ Below is the basic grid-world with the player (Pacman) and four enemies (ghosts)
 
 I’ve removed some functionality from the completed game. Therefore, when you run it you'll not see the full game working.
 
-1.	Open the code ``part5`` and examine the code carefully.
+1.	Open the code [Part5Game](https://github.com/barcaxi/oop/blob/master/assignments/code/Part5Game.zip?raw=true). and examine the code carefully.
 
-2.	At the moment, the "PacMan" can only move up.  Complete the ``move()`` method for the ``Player`` class so the player can move down, left, and right correctly.
+2.	At the moment, the "PacMan" can only move up.  Complete the ``move()`` method for the ``Player`` class so the player can move down, left, and right correctly.  Do not use any magic numbers, use the ``World`` class constants.
 
 3.	Do the same in the ``Enemy`` class ``move()`` method.
 
 4.	At the moment, all the enemies initially appear at the bottom right corner of the grid.  Modify the code in the ``World`` method ``createEnemy()`` so all enemies appear in a random grid location.
 
-
-5.	Add an new method to the ``World`` class called ``printLocationInfo()`` which will print the coordinates of each character (Player and Enemies) to the screen. You should invoke it when the mouse is pressed anywhere on the game grid.  Output should be in this format:
+5.	Add a new method to the ``World`` class called ``printLocationInfo()`` which will print the coordinates of each character (Player and Enemies) to the screen. You should invoke it when the mouse is pressed anywhere on the game grid.  Output should be in this format:
 
 	```
 	--PacMan--
@@ -436,11 +435,14 @@ I’ve removed some functionality from the completed game. Therefore, when you r
 
 	```
 
-6.	Identify a common class variable and class method both ``Player`` and ``Enemy`` classes use.  Instead of the unnecessary code duplication we currently have, create a superclass called ``GameCharacter`` to store the variable and method, and have ``Player`` and ``Enemy``  inherit from this new class.  Remove the duplicate variable and method from both ``Player`` and ``Enemy``.  Using this superclass will require some modifications to your existing code.
+6.	For every five moves the player makes create an additional enemy in the game.  For example at move number 5, 10, 15, etc.  Place this code at the end of the ``update()`` method in ``World``.
 
-7.	Create an ``AdvancedPlayer`` class which is a subclass of ``Player``.  It has the ability to move the PacMan left, right, up, down and **diagonally**.  Override the current ``Player`` method ``move()``. Test it using this code:
+7.	Identify a common class variable and class method both ``Player`` and ``Enemy`` classes use.  Instead of the unnecessary code duplication we currently have, create a superclass called ``GameCharacter`` to store the variable and method, and have ``Player`` and ``Enemy``  inherit from this new class.  Remove the duplicate variable and method from both ``Player`` and ``Enemy``.  Using this superclass will require some modifications to your existing code.
+
+8.	Create an ``AdvancedPlayer`` class which is a subclass of ``Player``.  It has the ability to move the PacMan left, right, up, down and **diagonally**.  Override the current ``Player`` method ``move()``. Test it in ``setup()`` using this code:
 
 	```java
+	// gameWorld = new World(new Player(new Location(0, 0)), 4);
 	gameWorld = new World(new AdvancedPlayer(new Location(0, 0)), 4);
 
 	```
