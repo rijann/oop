@@ -484,10 +484,46 @@ We've already seen instances of where a child class *overrides* parent methods b
 1.  the ``eat()`` method in ``Dog`` overrides the ``eat()`` method in ``Animal``
 2.  the ``display()`` method in ``Square`` overrides the ``display()`` method in ``Shape``
 
-
 An overridden method is simply a method in a subclass that has the exact same signature as a method in the superclass. Note that this implies it is specifically to do with inheritance.
 
 Note, method overriding is different from method overloading.
+
+**Override Annotation**
+
+``@Override`` is known as an annotation which asks the compiler to check whether there is such a method in the superclass to be overridden. This helps if you misspell the name of a overridden method, for example, ``toString()``. If ``@Override`` is not used and ``toString()`` is misspelled as ``ToString()``, it will be treated as a new method in the subclass, instead of overriding the superclass. 
+
+If ``@Override`` is used, the compiler will signal an error. ``@Override`` is optional, but  nice to have.
+
+
+**toString() revisited**
+
+We've previously talked about ``toString()`` [here](https://github.com/barcaxi/oop/blob/master/notes/ArraysAndArraylists.md#tostring-method). We can talk some more about it now since we understand the concept of inheritance.
+
+``toString()`` is an example of a very commonly overridden method in Java.  In fact, all Java classes should override it.  It is a method in the Java base class ``Object``.  See [Object](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html) in the Java Documentation.
+
+**ALL** Java classes inherit from the ``Object`` class - explicitly or implicitly.  Indeed all Java classes must inherit from some one Java class.  For example the code:
+
+```java
+public class Shape
+{
+
+}
+
+```
+
+is interpreted as this by the Java compiler:
+
+```java
+public class Shape extends Object
+{
+
+}
+
+```
+
+Any class you create that does not explicitly extend another class is assumed to be a subclass of the ``Object`` class.  
+
+Thus, all Java classes will inherit the ``Object`` class methods, including ``toString()``.  So when you implement a ``toString()`` method in your class, you are overriding the one in ``Object``.
 
 
 ## Is-a versus Has-a
