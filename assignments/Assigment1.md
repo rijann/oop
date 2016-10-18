@@ -370,16 +370,23 @@ You can then print the planets out. You can so this using a loop to iterate over
 Please note that your ``toString()`` for the ``Planet`` class must print all the moons of the planet.
 
 
-Test the code with test code like:
+Test the code with test code like this:
 
 ```java
-Planet earth = new Planet("earth", 25, 200, 1);
-earth.addMoon(new Moon("moon", 7.5, 50, 2, 28));
-ss.addPlanet(earth);
+Planet mars = new Planet("mars", 20, 300, 0.75);
+mars.addMoon(new Moon("Phobos", 5, 50, 2, 28));
+println(mars);  // toString()
 
-println(earth);  // toString()
 print("The Moons are: ");
-earth.printMoons();
+mars.printMoons();
+
+```
+
+and it should print:
+
+```
+Planet: mars (r=20.0;d=300.0) has 2 moon(s);Moon: Phobos(orbit=28); Moon: Deimos(orbit=42); 
+The Moons are: Moon: Phobos(orbit=28); Moon: Deimos(orbit=42);
 
 ```
 
