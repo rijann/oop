@@ -130,6 +130,8 @@ In this part a ``Circle`` and ``Square`` class are implemented as subclasses of 
 		//this.radius=radius;
 	}
 
+	```
+	
 	We've done two things here:
 
 	-	we now call our superclass constructor and pass it the values for ``x``, ``y``, and ``radius``.
@@ -174,7 +176,7 @@ In this part a ``Circle`` and ``Square`` class are implemented as subclasses of 
 	void setup()
 	{
 		size(300, 300);
-		
+
 		...
 		...
 
