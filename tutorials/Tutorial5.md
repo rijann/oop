@@ -131,7 +131,7 @@ In this part a ``Circle`` and ``Square`` class are implemented as subclasses of 
 	}
 
 	```
-	
+
 	We've done two things here:
 
 	-	we now call our superclass constructor and pass it the values for ``x``, ``y``, and ``radius``.
@@ -154,7 +154,7 @@ In this part a ``Circle`` and ``Square`` class are implemented as subclasses of 
 
 	```
  
- 7.	Run the sketch.  It should now work.  You will have successfully modified ``Circle`` to inherit from ``Shape``.  Double-check your two classes implement the following class diagram:
+7.	Run the sketch.  It should now work.  You will have successfully modified ``Circle`` to inherit from ``Shape``.  Double-check your two classes implement the following class diagram:
 
  	![alt text](../images/ShapeCircle.png "Shape Circle")
 
