@@ -161,11 +161,11 @@ In this part a ``Circle`` and ``Square`` class are implemented as subclasses of 
 8.	Modify the code in ``tut05_03`` to use a ``println()`` statement to print the area of the circle and print a string repesentation of the circle.
 
 
-9.	Implement the class ``Square`` as shown in the class diagram.
+9.	Implement a new class called ``Square`` as shown in the class diagram.
 
 	![alt text](../images/ShapeCircle.png "Shape Circle")
 
-	It inherits variables and methods from ``Shape``. Assume the length of the square is twice the ``radius``.  Provide the appropriate code for constructor, getPerimeter(), ``display()`` and ``toString()`` methods.  
+	It inherits variables and methods from ``Shape``. Assume the length of the square is twice the ``radius``.  Provide the appropriate code for constructor, ``getPerimeter()``, ``display()`` and ``toString()`` methods.  
 
 10.	Test the ``Square`` class with this tester code in ``tut05_03``:
 
@@ -180,7 +180,7 @@ In this part a ``Circle`` and ``Square`` class are implemented as subclasses of 
 		...
 		...
 
-		Square s = new Square(100, 200, 30);
+		s = new Square(100, 200, 30);
 		println(s.getPerimeter());  // should print 240
 		println(s);                 // should print "Square: length=30"	
 	}
