@@ -104,5 +104,91 @@ A subclass can be expanded to include additional functions and properties beyond
 
 ## Part 3 - Inheritance Shapes
 
+In this part a ``Circle`` and ``Square`` class are implemented as subclasses of a ``Shape`` class.
+
+1.	Open and run the program [tut05_03](https://github.com/barcaxi/oop/blob/master/code/tutorials/tut05_03/tut05_03.zip?raw=true).  Examine and understand the code.
+
+2.	Let's have the ``Circle`` class inherit variables and methods from the ``Shape`` class.  Update the ``Circle`` class code so it extends from ``Shape``:
+
+	```java
+	public class Circle extends Shape
+
+	```
+
+	Initially, you'll have an error with the ``Circle`` constructor, we'll fix that next.
+
+3.	Every constructor in a subclass should explicitly call a constructor in the superclass.
+	Modify the code in the ``Circle`` constructor to do this.  It should look like this:
+
+	```java
+	public Circle(int x, int y, int radius)
+	{
+		super(x, y, radius);
+
+		//this.x=x;
+		//this.y=y;
+		//this.radius=radius;
+	}
+
+	We've done two things here:
+
+	-	we now call our superclass constructor and pass it the values for ``x``, ``y``, and ``radius``.
+	-	we no longer need to intialise the ``Circle`` variables ``x``, ``y``, and ``radius``. Indeed we don't need these variables in ``Circle`` at all, because we inherit them from ``Shape``.  This is known as *shadowing of instance fields*.  It should NEVER be allowed to happen. We will fix this next.
+
+4.	Examine the class ``Circle`` and remove any shadow class variables.
+	Again, you'll have some errors but we'll fix those next.
+
+5.	Examine the class ``Circle`` and remove any shadow class methods too, i.e. any duplicate methods that are inherited from ``Shape`` already.  You should only remove three methods from ``Circle``.
+	You'll have one error with with the ``radius`` variable, we'll fix that next.
+
+
+6.	The variable ``radius`` is not visible in the ``Cirlcle`` method ``getArea()``.  That is because it is correctly declared as a ``private`` variable in ``Shape``.  To fix this use the publicly visible method ``getRadius()`` from ``Shape``, like this:
+
+	```java
+	public double getArea()  
+	{
+		return getRadius()*getRadius()*Math.PI;
+	}
+
+	```
+ 
+ 7.	Run the sketch.  It should now work.  You will have successfully modified ``Circle`` to inherit from ``Shape``.  Double-check your two classes implement the following class diagram:
+
+ 	![alt text](../images/ShapeCircle.png "Shape Circle")
+
+8.	Modify the code in ``tut05_03`` to use a ``println()`` statement to print the area of the circle and print a string repesentation of the circle.
+
+
+9.	Implement the class ``Square`` as shown in the class diagram.
+
+	![alt text](../images/ShapeCircle.png "Shape Circle")
+
+	It inherits variables and methods from ``Shape``. Assume the length of the square is twice the ``radius``.  Provide the appropriate code for constructor, getPerimeter(), ``display()`` and ``toString()`` methods.  
+
+10.	Test the ``Square`` class with this tester code in ``tut05_03``:
+
+	```java
+	...
+	Square s;
+
+	void setup()
+	{
+		size(300, 300);
+		
+		...
+		...
+
+		Square s = new Square(100, 200, 30);
+		println(s.getPerimeter());  // should print 240
+		println(s);                 // should print "Square: length=30"	
+	}
+
+	void draw()
+	{
+		background(0, 0, 0);
+		c.display();
+		s.display();
+	}
+	```
 
 ## Part 4 - 
