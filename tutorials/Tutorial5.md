@@ -193,4 +193,12 @@ In this part a ``Circle`` and ``Square`` class are implemented as subclasses of 
 	}
 	```
 
-## Part 4 - 
+## Part 4 - GAA Score Image
+
+In this part we'll create a program that can record and create a simple GAA score image as shown:
+
+![alt text](../images/tut05_04.png "GAA Score Image")
+
+1.	Open and run the program [tut05_04](https://github.com/barcaxi/oop/blob/master/code/tutorials/tut05_03/tut05_04.zip?raw=true).  Examine and understand the code.
+
+2.	
