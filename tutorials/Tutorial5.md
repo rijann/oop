@@ -235,7 +235,7 @@ In this part we'll create a program that can record and create a simple GAA scor
 
 8.	Add a similar ``toString()`` for the ``Point`` class.  
 
-9.	Run your program to test all is working.  If you press the letter "s" a image will be created from what is visible in your window.  Try it out.
+9.	Run your program to test all is working.  If you press the letter "s" an image called ``scoreChart.png`` will be created from what is visible in your window.  Try it out and find it in your sketch folder.
 
 
 
