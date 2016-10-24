@@ -163,7 +163,7 @@ In this part a ``Circle`` and ``Square`` class are implemented as subclasses of 
 
 9.	Implement a new class called ``Square`` as shown in the class diagram.
 
-	![alt text](../images/ShapeCircle.png "Shape Circle")
+	![alt text](../images/ShapeCircleSquare.png "Shape Circle Square")
 
 	It inherits variables and methods from ``Shape``. Assume the length of the square is twice the ``radius``.  Provide the appropriate code for constructor, ``getPerimeter()``, ``display()`` and ``toString()`` methods.  
 
