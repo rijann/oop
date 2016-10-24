@@ -211,7 +211,7 @@ In this part we'll create a program that can record and create a simple GAA scor
 
 4.	In ``Goal`` and ``Point`` provide the appropriate constructors and use the ``super`` keyword to invoke the superclass constructor that intialises the class variables.
 
-5.	In ``Goal`` use the override annotation and override the ``display()`` method to implement the following code:
+5.	In ``Goal`` use the ``@Override`` annotation and override the ``display()`` method to include the following code:
 
 	```java
     rectMode(CENTER);
@@ -219,3 +219,23 @@ In this part we'll create a program that can record and create a simple GAA scor
     rect(getX(), getY(), Shot.SIZE, Shot.SIZE);
 
 	```
+
+	Notice how we use the constant ``SIZE`` declared in the ``Shot`` class.
+
+
+6.	In ``Point`` use the ``@Override`` annotation and override the ``display()`` method to include the following code:
+
+	```java
+    fill(getColour());
+    ellipse(getX(), getY(), Shot.SIZE, Shot.SIZE);
+
+	```
+
+7.	Add a ``toString()`` method to ``Goal`` so that it will return the following type of text if a goal shot is scored - "Goal:@(354,117) scored" OR this if a goal shot was missed "Goal:@(154,127) missed".
+
+8.	Add a similar ``toString()`` for the ``Point`` class.  
+
+9.	Run your program to test all is working.  If you press the letter "s" a image will be created from what is visible in your window.  Try it out.
+
+
+
