@@ -199,7 +199,7 @@ In this part we'll create a program that can record and create a simple GAA scor
 
 ![alt text](../images/tut05_04.png "GAA Score Image")
 
-1.	Open and run the program [tut05_04](https://github.com/barcaxi/oop/blob/master/code/tutorials/tut05_03/tut05_04.zip?raw=true).  Examine and understand the code.
+1.	Open and run the program [tut05_04](https://github.com/barcaxi/oop/blob/master/code/tutorials/tut05_04/tut05_04.zip?raw=true).  Examine and understand the code.
 
 2.	The program implements a simple class hierarchy as shown in this class diagram:
 
@@ -209,9 +209,11 @@ In this part we'll create a program that can record and create a simple GAA scor
 
 3.	Add the ``getX()``, ``getY()`` and ``getColour()`` methods to the superclass ``Shot``.
 
-4.	In ``Goal`` and ``Point`` provide the appropriate constructors and use the ``super`` keyword to invoke the superclass constructor that intialises the class variables.
+4.	In ``Goal`` and ``Point`` inherit functionality from the ``Shot`` class.
 
-5.	In ``Goal`` use the ``@Override`` annotation and override the ``display()`` method to include the following code:
+5.	In ``Goal`` and ``Point`` provide the appropriate constructors and use the ``super`` keyword to invoke the superclass constructor that intialises the class variables.
+
+6.	In ``Goal`` use the ``@Override`` annotation and override the ``display()`` method to include the following code:
 
 	```java
     rectMode(CENTER);
@@ -223,7 +225,7 @@ In this part we'll create a program that can record and create a simple GAA scor
 	Notice how we use the constant ``SIZE`` declared in the ``Shot`` class.
 
 
-6.	In ``Point`` use the ``@Override`` annotation and override the ``display()`` method to include the following code:
+7.	In ``Point`` use the ``@Override`` annotation and override the ``display()`` method to include the following code:
 
 	```java
     fill(getColour());
@@ -231,11 +233,11 @@ In this part we'll create a program that can record and create a simple GAA scor
 
 	```
 
-7.	Add a ``toString()`` method to ``Goal`` so that it will return the following type of text if a goal shot is scored - "Goal:@(354,117) scored" OR this if a goal shot was missed "Goal:@(154,127) missed".
+8.	Add a ``toString()`` method to ``Goal`` so that it will return the following type of text if a goal shot is scored - "Goal:@(354,117) scored" OR this if a goal shot was missed "Goal:@(154,127) missed".
 
-8.	Add a similar ``toString()`` for the ``Point`` class.  
+9.	Add a similar ``toString()`` for the ``Point`` class.  
 
-9.	Run your program to test all is working.  If you press the letter "s" an image called ``scoreChart.png`` will be created from what is visible in your window.  Try it out and find it in your sketch folder.
+10.	Run your program to test all is working.  If you press the letter "s" an image called ``scoreChart.png`` will be created from what is visible in your window.  Try it out and find it in your sketch folder.
 
 
 
