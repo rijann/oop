@@ -201,4 +201,21 @@ In this part we'll create a program that can record and create a simple GAA scor
 
 1.	Open and run the program [tut05_04](https://github.com/barcaxi/oop/blob/master/code/tutorials/tut05_03/tut05_04.zip?raw=true).  Examine and understand the code.
 
-2.	
+2.	The program implements a simple class hierarchy as shown in this class diagram:
+
+	![alt text](../images/ShotGoalPoint.png "Shot Goal Point")
+
+	Examine this diagram when writing the code that follows.
+
+3.	Add the ``getX()``, ``getY()`` and ``getColour()`` methods to the superclass ``Shot``.
+
+4.	In ``Goal`` and ``Point`` provide the appropriate constructors and use the ``super`` keyword to invoke the superclass constructor that intialises the class variables.
+
+5.	In ``Goal`` use the override annotation and override the ``display()`` method to implement the following code:
+
+	```java
+    rectMode(CENTER);
+    fill(getColour());
+    rect(getX(), getY(), Shot.SIZE, Shot.SIZE);
+
+	```
